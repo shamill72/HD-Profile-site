@@ -60,6 +60,10 @@ try {
         url: 'https://hamilldesignstesting.com/get-likes.php',  // URL to the PHP file that returns likes count
         type: 'GET',           // Use GET to fetch data
         crossDomain: true,
+        dataType: 'jsonp',
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+          },
         success: function(response) {
             let likes = JSON.parse(response);  // Parse the JSON response
 
