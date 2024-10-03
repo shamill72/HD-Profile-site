@@ -1,6 +1,6 @@
 <?php
 include('config.php');
-
+header('Content-Type: application/json; charset=utf-8');
 // Enable error reporting for better debugging (disable in production)
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
