@@ -38,6 +38,7 @@ $(document).ready(function() {
             crossDomain: true,
             headers: {
                 'Access-Control-Allow-Origin': '*',
+            },
             data: {
                 likes_id: projId,
                 user_id: userId
