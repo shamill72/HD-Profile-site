@@ -38,7 +38,6 @@ $(document).ready(function() {
             crossDomain: true,
             headers: {
                 'Access-Control-Allow-Origin': '*',
-                'Content-Type: application/json; charset=utf8',
             },
             data: {
                 likes_id: projId,
@@ -67,7 +66,6 @@ try {
         dataType: 'jsonp',
         headers: {
             'Access-Control-Allow-Origin': '*',
-            'Content-Type: application/json; charset=utf8',
           },
         success: function(response) {
             let likes = JSON.parse(response);  // Parse the JSON response
