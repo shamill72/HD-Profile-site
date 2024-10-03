@@ -36,6 +36,9 @@ $(document).ready(function() {
             url: 'https://hamilldesignstesting.com/store-like.php',
             type:'POST',
             crossDomain: true,
+            dataType: 'jsonp',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
             data: {
                 likes_id: projId,
                 user_id: userId
