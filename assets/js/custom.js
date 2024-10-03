@@ -63,6 +63,7 @@ try {
         url: 'https://hamilldesignstesting.com/get-likes.php',  // URL to the PHP file that returns likes count
         type: 'GET',           // Use GET to fetch data
         crossDomain: true,
+        dataType: 'json',
         headers: {
             'Access-Control-Allow-Origin': '*',
           },
