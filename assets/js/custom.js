@@ -36,7 +36,6 @@ $(document).ready(function() {
             url: 'https://hamilldesignstesting.com/store-like.php',
             type:'POST',
             crossDomain: true,
-            dataType: 'jsonp',
             headers: {
                 'Access-Control-Allow-Origin': '*',
             data: {
@@ -63,7 +62,6 @@ try {
         url: 'https://hamilldesignstesting.com/get-likes.php',  // URL to the PHP file that returns likes count
         type: 'GET',           // Use GET to fetch data
         crossDomain: true,
-        dataType: 'jsonp',
         headers: {
             'Access-Control-Allow-Origin': '*',
           },
