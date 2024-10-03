@@ -33,7 +33,7 @@ $(document).ready(function() {
         let userId = getUserId();
         console.log("UserId: ", userId);
         $.ajax({
-            url: 'http://hamilldesignstesting.com/store-like.php',
+            url: 'https://hamilldesignstesting.com/store-like.php',
             type:'POST',
             crossDomain: true,
             data: {
@@ -57,7 +57,7 @@ $(document).ready(function() {
 function fetchLikes() {
 try {
     $.ajax({
-        url: 'http://hamilldesignstesting.com/get-likes.php',  // URL to the PHP file that returns likes count
+        url: 'https://hamilldesignstesting.com/get-likes.php',  // URL to the PHP file that returns likes count
         type: 'GET',           // Use GET to fetch data
         success: function(response) {
             let likes = JSON.parse(response);  // Parse the JSON response
