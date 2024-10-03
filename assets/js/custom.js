@@ -59,6 +59,7 @@ try {
     $.ajax({
         url: 'https://hamilldesignstesting.com/get-likes.php',  // URL to the PHP file that returns likes count
         type: 'GET',           // Use GET to fetch data
+        crossDomain: true,
         success: function(response) {
             let likes = JSON.parse(response);  // Parse the JSON response
 
