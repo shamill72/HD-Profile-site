@@ -60,10 +60,10 @@ $(document).ready(function() {
 function fetchLikes() {
 try {
     $.ajax({
-        url: 'https://hamilldesignstesting.com/get-likes.php?callback=?',  // URL to the PHP file that returns likes count
+        url: 'https://hamilldesignstesting.com/get-likes.php',  // URL to the PHP file that returns likes count
         type: 'GET',           // Use GET to fetch data
         crossDomain: true,
-        dataType: 'jsonp',
+        dataType: 'json',
         headers: {
             'Access-Control-Allow-Origin': '*',
           },
