@@ -68,6 +68,7 @@ try {
             'Access-Control-Allow-Origin': '*',
           },
         success: function(response) {
+            console.log(response);
             let likes = JSON.parse(response);  // Parse the JSON response
 
             // Loop through each project and update the like count display
