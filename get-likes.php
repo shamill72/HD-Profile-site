@@ -1,6 +1,12 @@
 <?php
 include('config.php');
-header('Content-Type: application/json; charset=utf-8');
+
+// Get the callback function name from the query string (default is 'callback')
+$callback = isset($_GET['callback']) ? $_GET['callback'] : false;
+
+// Set the correct content type for JSONP
+header('Content-Type: application/javascript; charset=utf-8');
+
 // Enable error reporting for better debugging (disable in production)
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -14,10 +20,19 @@ try {
     // Fetch all results as an associative array
     $likes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    // Return results as JSON
-    echo json_encode($likes);
+    // Check if callback is provided, wrap the JSON in a callback function
+    if ($callback) {
+        echo $callback . '(' . json_encode($likes) . ')'; // JSONP response
+    } else {
+        echo json_encode($likes); // Fallback to normal JSON
+    }
 } catch (PDOException $e) {
     // Return error message if something goes wrong
-    echo json_encode(['error' => $e->getMessage()]);
+    $error = ['error' => $e->getMessage()];
+    if ($callback) {
+        echo $callback . '(' . json_encode($error) . ')'; // JSONP error response
+    } else {
+        echo json_encode($error); // Fallback to normal JSON
+    }
 }
 ?>
