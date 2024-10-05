@@ -29,16 +29,13 @@ $(document).ready(function() {
     });
 
     function storeVote(projId) {
-        console.log("ProjectID: ",projId);
+      //  console.log("ProjectID: ",projId);
         let userId = getUserId();
-        console.log("UserId: ", userId);
+      //  console.log("UserId: ", userId);
         $.ajax({
             url: 'https://hamilldesignstesting.com/store-like.php',
             type:'POST',
             crossDomain: true,
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-            },
             data: {
                 likes_id: projId,
                 user_id: userId
@@ -65,7 +62,7 @@ try {
         crossDomain: true,      // Allow cross-origin requests
         dataType: 'json',       // Expect JSON data in response
         success: function(response) {
-            console.log(response);  // Check the data in the browser console
+           // console.log(response);  // Check the data in the browser console
     
             // Loop through each project and update the like count display
             response.forEach(function(like) {
@@ -148,11 +145,11 @@ honeyPot.on('change', function() {
 })
 const formSubmit = $('#submit');
 
-console.log("FormSubmit: ", formSubmit);
+// console.log("FormSubmit: ", formSubmit);
 
 $("form").submit(function(event) {
     event.preventDefault();
-    console.log("Button works");
+  //  console.log("Button works");
     if(botPot != "") {
         formSubmit.attr('disabled', 'disabled');
         console.log("Bot filled stopped");
