@@ -60,28 +60,25 @@ $(document).ready(function() {
 function fetchLikes() {
 try {
     $.ajax({
-        url: 'https://hamilldesignstesting.com/get-likes.php',  // URL to the PHP file that returns likes count
-        type: 'GET',           // Use GET to fetch data
-        crossDomain: true,
-        dataType: 'json',
+        url: 'https://hamilldesignstesting.com/get-likes.php',  // URL to your PHP script
+        type: 'GET',           // Use GET method to fetch data
+        crossDomain: true,      // Allow cross-origin requests
+        dataType: 'json',       // Expect JSON data in response
         success: function(response) {
-            console.log(response);
-            let likes = JSON.parse(response);  // Parse the JSON response
-
+            console.log(response);  // Check the data in the browser console
+    
             // Loop through each project and update the like count display
-            likes.forEach(function(like) {
-                console.log(like);
+            response.forEach(function(like) {
                 $('#project-like-' + like.likes_id).text(like.like_count);
             });
         },
         error: function(xhr, status, error) {
-            console.error('Error fetching likes:', error);
+            console.error('Error fetching likes:', error);  // Log any error
         }
     });
     } catch (error) {
         console.log("There was an error fetching the likes", error);
     }
-
 }
 
     // Function to generate a random user ID (UUID-like)
