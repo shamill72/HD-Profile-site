@@ -43,6 +43,7 @@ $(document).ready(function() {
             success: function(response) {
                 if(response.liked) {
                     console.log("It was liked");
+                    fetchLikes();
                 } else {
                     console.log("You already liked it");
                 }
