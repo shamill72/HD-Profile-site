@@ -40,6 +40,7 @@ $(document).ready(function() {
                 likes_id: projId,
                 user_id: userId
             },
+            dataType: 'json',
             success: function(response) {
                 console.log("response: ",response);
                 console.log("response.liked: ",response.liked);
