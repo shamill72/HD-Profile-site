@@ -13211,7 +13211,7 @@ figcaption {
 }
 .slide.slider-style-3 .slider-wrapper .background-image-area .thumbnail-image img {
   width: 50%;
-  height: 60%;
+  height: 80%;
   border-radius: 8px;
   object-fit: cover;
 }
