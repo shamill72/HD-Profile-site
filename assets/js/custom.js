@@ -41,7 +41,7 @@ $(document).ready(function() {
                 user_id: userId
             },
             success: function(response) {
-                console.log(response.liked);
+                console.log(response);
                 if(response.liked) {
                     console.log("It was liked");
                     fetchLikes();
