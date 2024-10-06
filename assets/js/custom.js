@@ -29,9 +29,9 @@ $(document).ready(function() {
     });
 
     function storeVote(projId) {
-      console.log("ProjectID: ",projId);
+     // console.log("ProjectID: ",projId);
         let userId = getUserId();
-      console.log("UserId: ", userId);
+    //  console.log("UserId: ", userId);
         $.ajax({
             url: 'https://hamilldesignstesting.com/store-like.php',
             type:'POST',
@@ -42,8 +42,8 @@ $(document).ready(function() {
             },
             dataType: 'json',
             success: function(response) {
-                console.log("response: ",response);
-                console.log("response.liked: ",response.liked);
+              //  console.log("response: ",response);
+              //  console.log("response.liked: ",response.liked);
                 if(response.liked) {
                     console.log("It was liked");
                     fetchLikes();
@@ -134,7 +134,7 @@ function setCookie(name, value, days) {
 
 // Example usage:
 let userId = getUserId();
-console.log("User ID: ", userId);
+// console.log("User ID: ", userId);
 $('#closeModal').on('click', function() {
     $('#submitModal').css('display', 'none');
         $('#submitModal').css('opacity', '0');
