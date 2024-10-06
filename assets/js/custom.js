@@ -29,7 +29,7 @@ $(document).ready(function() {
     });
 
     function storeVote(projId) {
-      //  console.log("ProjectID: ",projId);
+      console.log("ProjectID: ",projId);
         let userId = getUserId();
       console.log("UserId: ", userId);
         $.ajax({
