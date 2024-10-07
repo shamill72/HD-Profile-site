@@ -158,7 +158,7 @@ $("form").submit(function(event) {
         formSubmit.attr('disabled', 'disabled');
         console.log("Bot filled stopped");
     } else {
-        $(this).unbind('submit').submit();
+        $(this).submit();
         console.log("Submitted the form");
         $('#email-form input').each(function() {
             if($(this).val() == "Website form email") {
