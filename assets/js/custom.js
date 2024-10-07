@@ -1,7 +1,14 @@
 $(document).ready(function() {
     getUserId();
     fetchLikes();
-
+    const honeyPot = $('#botPot');
+    let botPot = "";
+    honeyPot.on('change', function() {
+        let botStop = honeyPot.val();
+        console.log("BotPot: ", botStop);
+        botPot = botStop;
+    });
+    const formSubmit = $('#submit');
     $('#exampleModalCenter').on('show.bs.modal', function(event) {
         let button = $(event.relatedTarget);
         let projectType = button.data('bs-platform');
@@ -140,14 +147,7 @@ $('#closeModal').on('click', function() {
         $('#submitModal').css('opacity', '0');
         $('#submitModal').attr('aria-hidden');
 })
-const honeyPot = $('#botPot');
-let botPot = "";
-honeyPot.on('change', function() {
-    let botStop = honeyPot.val();
-    console.log("BotPot: ", botStop);
-    botPot = botStop;
-})
-const formSubmit = $('#submit');
+
 
 // console.log("FormSubmit: ", formSubmit);
 
