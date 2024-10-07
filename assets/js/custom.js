@@ -153,7 +153,7 @@ const formSubmit = $('#submit');
 
 $("form").submit(function(event) {
     event.preventDefault();
-  //  console.log("Button works");
+  console.log("botPot: ", botPot);
     if(botPot != "") {
         formSubmit.attr('disabled', 'disabled');
         console.log("Bot filled stopped");
