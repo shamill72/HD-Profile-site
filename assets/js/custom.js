@@ -158,7 +158,19 @@ $("form").submit(function(event) {
         formSubmit.attr('disabled', 'disabled');
         console.log("Bot filled stopped");
     } else {
-        $(this).submit();
+        // $(this).submit();
+        $.ajax({
+            type: $(this).attr('method'),  // Get the form method (POST/GET)
+            url: $(this).attr('action'),   // Get the form action URL
+            data: $(this).serialize(),     // Serialize the form data
+            success: function(response) {
+                console.log("Form submitted successfully", response);
+                // Handle the success case
+            },
+            error: function(xhr, status, error) {
+                console.error('Form submission error:', error);
+            }
+        });
         console.log("Submitted the form");
         $('#email-form input').each(function() {
             if($(this).val() == "Website form email") {
