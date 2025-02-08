@@ -1,903 +1,2910 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Shane Hamill | Web Developer</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="robots" content="noindex, follow" /> -->
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.ico"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/about/professional_look_color_copy.webp"
+    />
     <!-- CSS 
     ============================================ -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/vendor/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/slick.css" />
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
+    <link rel="stylesheet" href="assets/css/plugins/feature.css" />
     <!-- Style css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="assets/js/custom.js"></script>
-</head>
+    <style type="text/css">
+      .mt--50 {
+        margin-top: 50px !important;
+      }
+      .mt--45 {
+        margin-top: 45px !important;
+      }
+      .mt--40 {
+  margin-top: 40px !important;
+}
+      .mr--30 {
+        margin-right: 30px !important;
+      }
+      .mt--25 {
+        margin-top: 25px !important;
+      }
+      .m--0 {
+        margin: 0;
+      }
 
-<body class="template-color-1 spybody" data-spy="scroll" data-bs-target=".navbar-example2" data-offset="150">
+      .rn-section-gap {
+        padding: 100px 0;
+      }
+      ul li {
+        font-size: var(--font-size-b1);
+        line-height: var(--line-height-b1);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: var(--color-body);
+      }
+      ul li a {
+        text-decoration: none;
+        color: var(--color-gray);
+      }
+      ul,
+      ol {
+        padding-left: 18px;
+      }
+
+      ul {
+        list-style: square;
+        margin-bottom: 30px;
+        padding-left: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 0 0 20px;
+        width: 100%;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        font-size: var(--font-size-b2);
+        line-height: var(--line-height-b2);
+        font-weight: var(--p-regular);
+        color: var(--color-body);
+        margin: 0 0 40px;
+      }
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: var(--s-bold);
+      }
+      h1 a,
+      h2 a,
+      h3 a,
+      h4 a,
+      h5 a,
+      h6 a,
+      .h1 a,
+      .h2 a,
+      .h3 a,
+      .h4 a,
+      .h5 a,
+      .h6 a {
+        color: inherit;
+      }
+      h4,
+      .h4 {
+        font-size: var(--h4);
+        line-height: 1.25;
+      }
+      h2,
+      .h2 {
+        font-size: var(--h2);
+        line-height: 1.23;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        word-break: break-word;
+        font-family: var(--font-secondary);
+        line-height: 1.4074;
+        color: var(--color-heading);
+      }
+      :root {
+        --color-primary: #5f5ee0;
+        --color-secondary: #f4f5f6;
+        --color-tertiary: #0d1013;
+        --color-gray: #f6f6f6;
+        --color-subtitle: #5f5ee0;
+        --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
+        --background-color-2: #212428;
+        --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        --shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+        --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset,
+          -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+        --shadow-white-3: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+        --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
+        --gradient-red-hover: linear-gradient(145deg, #ff014f, #d11414);
+        --color-heading: #ffffff;
+        --color-heading-wv: #1e2125;
+        --color-body: #878e99;
+        --color-body-white: #3c3e41;
+        --color-lightn: #c4cfde;
+        --color-midgray: #878787;
+        --color-light: #e4e6ea;
+        --color-lighter: #ced0d4;
+        --color-lightest: #f0f2f5;
+        --color-border: #e6e6e6;
+        --color-white: #ffffff;
+        --color-white-75: rgba(255, 255, 255, 0.75);
+        --color-success: #3eb75e;
+        --color-danger: #ff0003;
+        --color-warning: #ff8f3c;
+        --color-info: #1ba2db;
+        --color-facebook: #3b5997;
+        --color-twitter: #1ba1f2;
+        --color-youtube: #ed4141;
+        --color-linkedin: #0077b5;
+        --color-pinterest: #e60022;
+        --color-instagram: #c231a1;
+        --color-vimeo: #00adef;
+        --color-twitch: #6441a3;
+        --color-discord: #7289da;
+        --p-light: 300;
+        --p-regular: 400;
+        --p-medium: 500;
+        --p-semi-bold: 600;
+        --p-bold: 700;
+        --p-extra-bold: 800;
+        --p-black: 900;
+        --s-light: 300;
+        --s-regular: 400;
+        --s-medium: 500;
+        --s-semi-bold: 600;
+        --s-bold: 700;
+        --s-extra-bold: 800;
+        --s-black: 900;
+        --transition: 0.4s;
+        --font-primary: "Poppins", sans-serif;
+        --font-secondary: "Montserrat", sans-serif;
+        --font-size-b1: 18px;
+        --font-size-b2: 22px;
+        --font-size-b3: 14px;
+        --line-height-b1: 1.5;
+        --line-height-b2: 1.6;
+        --line-height-b3: 1.7;
+        --h1: 70px;
+        --h2: 60px;
+        --h3: 50px;
+        --h4: 40px;
+        --h5: 30px;
+        --h6: 20px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        overflow: hidden;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-size: var(--font-size-b1);
+        line-height: var(--line-height-b1);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: var(--font-primary);
+        color: var(--color-body);
+        font-weight: var(--p-regular);
+      } h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+address,
+p,
+pre,
+blockquote,
+menu,
+ol,
+ul,
+table,
+hr {
+  margin: 0;
+  margin-bottom: 20px;
+} h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-weight: var(--s-bold);
+}
+
+h4,
+.h4,
+h5,
+.h5 {
+  font-weight: var(--s-bold);
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row > [class*=col] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+summary {
+  display: block;
+} a {
+  color: var(--color-heading);
+  text-decoration: none;
+  outline: none;
+} menu,
+ol,
+ul {
+  margin: 16px 0;
+  padding: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+} img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+} form {
+  margin: 0;
+} 
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  cursor: pointer;
+} textarea {
+  overflow: auto;
+  vertical-align: top;
+} input,
+button,
+select,
+textarea {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  transition: all 0.4s ease-out 0s;
+  color: var(--color-body);
+  width: 100%;
+} 
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+input {
+  height: 40px;
+  padding: 0 15px;
+} 
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=tel],
+textarea {
+  font-size: var(--font-size-b2);
+  font-weight: 400;
+  height: auto;
+  line-height: 28px;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0 15px;
+  outline: none;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius);
+  /* -- Placeholder -- */
+} 
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.form-group input {
+  border: 0 none;
+  border-radius: 4px;
+  height: 50px;
+  font-size: var(--font-size-b2);
+  transition: var(--transition);
+  padding: 0 20px;
+  background-color: var(--color-lightest);
+  border: 1px solid transparent;
+  transition: var(--transition);
+} 
+.form-group textarea {
+  min-height: 160px;
+  border: 0 none;
+  border-radius: 4px;
+  resize: none;
+  padding: 15px;
+  font-size: var(--font-size-b2);
+  transition: var(--transition);
+  background-color: var(--color-lightest);
+  border: 1px solid transparent;
+} 
+.social-share-style-1.single-page-icone {
+  border-top: none;
+  margin-top: 0 !important;
+  padding-top: 0;
+}
+.social-share-style-1 .title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: var(--color-lightn);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.social-share-style-1 .social-share {
+  margin: 0;
+  flex-wrap: wrap;
+}
+.social-share-style-1 .social-share li {
+  margin: 0 25px 25px 0;
+}
+.social-share-style-1 .social-share li a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition: var(--transition);
+  background: var(--background-color-1);
+  position: relative;
+  z-index: 1;
+  box-shadow: var(--shadow-1);
+} 
+.social-share-style-1 .social-share li a::before {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: -1;
+} 
+.social-share-style-1 .social-share li a svg {
+  color: var(--color-lightn);
+  transition: var(--transition);
+  stroke-width: 2;
+  position: relative;
+  z-index: 2;
+  width: 20px;
+} 
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+body.template-color-1 {
+  background-color: #212428;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: transparent;
+  position: relative;
+}
+
+.nav-pills .nav-link {
+  margin: 0.5rem 1rem;
+  padding: 0;
+}
+
+.header-wrapper {
+  height: 122px;
+  padding: 0 64px;
+}
+.header-wrapper .header-left {
+  flex-basis: 20%;
+  justify-content: flex-start;
+  display: flex;
+}
+.header-wrapper .header-center {
+  flex-basis: 100%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+.rn-header.header--sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.rn-header.header--fixed {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  transition: 0.3s;
+}
+.logo a {
+  display: inline-block;
+}
+.logo a img {
+  transition: 0.3s;
+}
+.mainmenu-nav .primary-menu {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: -24px;
+  padding: 0;
+}
+.mainmenu-nav .primary-menu li {
+  margin: 10px 14px;
+  transition: 0.3s;
+}
+.mainmenu-nav .primary-menu li a {
+  color: var(--color-lightn);
+  position: relative;
+  transition: var(--transition);
+  font-size: 13px;
+  font-weight: var(--s-regular);
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+}
+.mainmenu-nav .primary-menu li.current a {
+  opacity: 1 !important;
+  color: var(--color-white);
+}
+.popup-mobile-menu {
+  z-index: 9999;
+  position: fixed;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.popup-mobile-menu .inner {
+  padding: 25px 40px;
+  width: 375px;
+  z-index: 999;
+  position: absolute;
+  background: #191b1e;
+  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  left: -150px;
+  transition: all 0.5s ease-out;
+}
+.popup-mobile-menu .inner .menu-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+}
+.popup-mobile-menu .inner .menu-top .menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-mobile-menu .inner .menu-top .menu-header .close-button .close {
+  opacity: 1;
+  width: max-content;
+  position: relative;
+}
+.popup-mobile-menu .inner .menu-top .menu-header .close-button .close::after {
+  position: absolute;
+  content: "";
+  padding: 22px;
+  background: var(--background-color-1);
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+} 
+.popup-mobile-menu .inner .menu-top p.discription {
+  font-size: 16px;
+  line-height: 29px;
+  margin-top: 20px;
+  color: var(--color-lighten);
+  padding-right: 0;
+}
+.social-share-style-1 {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 100px !important;
+}
+
+.social-share-style-1 .social-share li {
+  margin: 0 15px 15px 0;
+}
+
+.social-share-style-1 .social-share {
+  margin-right: -15px;
+}
+
+.social-share-style-1 .social-share li a {
+  width: 53px;
+  height: 53px;
+  line-height: 53px;
+}
+
+.popup-mobile-menu .social-share-style-1 .social-share li a {
+  box-shadow: none;
+}
+a.rn-btn,
+button.rn-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a.rn-btn,
+button.rn-btn {
+  border-radius: 6px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0 none;
+}
+a.rn-btn::before,
+button.rn-btn::before {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: -1;
+}
+.section-separator {
+  position: relative;
+}
+.section-separator::after {
+  position: absolute;
+  max-width: 1270px;
+  height: 1px;
+  background: #121415;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+} 
+.section-title span.subtitle {
+  color: #ff014f;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+}
+.section-title h2.title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-lightn);
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.slide {
+  padding-bottom: 100px;
+  position: relative;
+}
+.slide.slider-style-3 .slider-wrapper {
+  padding-top: 210px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info {
+  top: 250px;
+  transition: var(--transition);
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top {
+  padding: 35px;
+  background: var(--background-color-2);
+  box-shadow: var(--shadow-1);
+  border-radius: 10px 10px 0 0;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header {
+  margin-bottom: 30px;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header .user {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header .user svg {
+  width: 22px;
+  height: auto;
+  position: relative;
+  color: #ffffff;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header .user::before {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background: var(--color-primary);
+  opacity: 0.7;
+  z-index: -1;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header .user::after {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  background: var(--color-primary);
+  opacity: 0.2;
+  z-index: -2;
+  transform: translate(-50%, -50%);
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header .title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  margin-bottom: 11px;
+  font-family: var(--font-secondary);
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header .title span {
+  color: var(--color-primary);
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header p.disc {
+  font-size: 16px;
+  color: var(--color-lightn);
+  line-height: 24px;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-footer .info {
+  display: flex;
+  margin-bottom: 13px;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-footer .info svg {
+  color: var(--color-primary);
+  margin-right: 10px;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-footer .info span {
+  color: var(--color-lightn);
+  font-size: 16px;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom {
+  border-radius: 0 0 10px 10px;
+  margin-top: 30px;
+  padding: 35px;
+  box-shadow: var(--shadow-1);
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom > span {
+  color: var(--color-lightn);
+  font-size: 16px;
+}
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom .button-wrapper {
+  margin-top: 30px;
+}
+.slide.slider-style-3 .slider-wrapper .background-image-area {
+  padding: 34px;
+  box-shadow: var(--shadow-1);
+  position: relative;
+  right: 0;
+  border-radius: 10px;
+  transition: var(--transition);
+  height: 100%;
+}
+.slide.slider-style-3 .slider-wrapper .background-image-area .thumbnail-image {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.slide.slider-style-3 .slider-wrapper .background-image-area .thumbnail-image img {
+  width: 50%;
+  height: 80%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.modal.fade {
+  transition: opacity 0.1s linear;
+}
+.modal {
+  z-index: 99999999;
+  background: #212428;
+  padding: 60px 15px !important;
+}
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
+.section-title span.subtitle {
+  color: var(--color-subtitle);
+  letter-spacing: 1px;
+  display: block;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.rn-nav-list {
+  border: 0 none;
+  border-radius: 10px;
+  background: var(--background-color-1);
+  box-shadow: var(--shadow-1);
+  justify-content: space-between;
+}
+.rn-nav-list .nav-item {
+  flex-basis: 25%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.rn-nav-list .nav-item .nav-link {
+  color: #c4cfde;
+  font-family: var(--font-primary);
+  padding: 30px 10px;
+  text-transform: capitalize;
+  font-size: var(--font-size-b1);
+  font-weight: 500;
+  outline: none;
+  border: 0 none;
+  transition: all 0.5s;
+  background: transparent;
+  border-radius: 10px;
+}
+.rn-nav-list .nav-item .nav-link:hover, .rn-nav-list .nav-item .nav-link.active {
+  color: var(--color-subtitle);
+  background-color: transparent;
+  border-color: transparent;
+  border: 0 none;
+  background: var(--background-color-1);
+  box-shadow: var(--shadow-1);
+}
+
+.personal-experience-inner .content span.subtitle {
+  color: var(--color-subtitle);
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.personal-experience-inner .content .maintitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 62px;
+  color: var(--color-lightn);
+}
+.personal-experience-inner .experience-list {
+  padding-left: 31px;
+  border-left: 5px solid #979797;
+}
+.personal-experience-inner .experience-list .resume-single-list {
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+  padding: 45px 40px;
+  border-radius: 6px;
+  background: var(--background-color-1);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+}
+.personal-experience-inner .experience-list .resume-single-list::before {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: -1;
+}
+.personal-experience-inner .experience-list .resume-single-list .inner::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 5px solid #979797;
+  border-radius: 100%;
+  right: 104%;
+  top: 55px;
+  transform: translateY(-7px);
+  background: #222529;
+  transition: var(--transition);
+}
+.personal-experience-inner .experience-list .resume-single-list .inner::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 5px;
+  right: 100%;
+  top: 63px;
+  transform: translateY(-7px);
+  background: #979797;
+  z-index: 0;
+}
+.personal-experience-inner .experience-list .resume-single-list .inner .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1a1d23;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.personal-experience-inner .experience-list .resume-single-list .inner .heading .title {
+  margin-bottom: 15px;
+}
+.personal-experience-inner .experience-list .resume-single-list .inner .heading .title h4 {
+  color: var(--color-lightn);
+  font-family: var(--font-primary);
+  font-size: 24px;
+  line-height: 39px;
+  margin-bottom: 7px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.personal-experience-inner .experience-list .resume-single-list .inner .heading .title span {
+  color: #7c838e;
+  display: block;
+  font-size: 14px;
+}
+.personal-experience-inner .experience-list .resume-single-list .inner .heading .date-of-time {
+  display: inline-block;
+}
+.personal-experience-inner .experience-list .resume-single-list .inner .heading .date-of-time span {
+  color: var(--color-primary);
+  display: block;
+  font-size: 14px;
+  padding: 0 15px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 6px;
+  background: var(--background-color-1);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  font-weight: 500;
+}
+.personal-experience-inner .experience-list .resume-single-list .inner p {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-body);
+  transition: var(--transition);
+}
+.contact-about-area {
+  padding: 30px;
+  box-shadow: var(--shadow-1);
+  border-radius: 10px;
+  background-color: #212428;
+  height: 100%;
+}
+.contact-about-area .thumbnail {
+  margin-bottom: 28px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.contact-about-area .thumbnail img {
+  width: 100%;
+  height: auto;
+  transition: var(--transition);
+}
+.contact-about-area .title-area {
+  margin-bottom: 15px;
+}
+.contact-about-area .title-area h4.title {
+  font-size: 29px;
+  line-height: 44px;
+  color: var(--color-light);
+  margin-bottom: 9px;
+}
+.contact-about-area .description {
+  margin-bottom: 39px;
+}
+.contact-about-area .description p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-body);
+  font-family: var(--font-primary);
+  line-height: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contact-about-area .description span {
+  display: block;
+}
+.contact-about-area .description span a {
+  transition: var(--transition);
+  position: relative;
+  color: var(--color-lightn);
+  font-weight: 400;
+}
+.contact-about-area .description span a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  background-color: var(--color-primary);
+  height: 1px;
+  left: 0;
+  bottom: 2px;
+  transition: var(--transition);
+  z-index: 10;
+}
+.contact-about-area .social-area .name {
+  font-size: 14px;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  color: var(--color-body);
+  margin-bottom: 8px;
+}
+.contact-about-area .social-area .social-icone {
+  margin-top: 24px;
+}
+.contact-about-area .social-area .social-icone a {
+  width: 61px;
+  height: 61px;
+  line-height: 57px;
+  margin-right: 15px;
+  box-shadow: var(--shadow-1);
+  border-radius: 6px;
+  transition: var(--transition);
+  display: inline-block;
+  text-align: center;
+}
+.contact-about-area .social-area .social-icone a::before {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: -1;
+}
+.contact-about-area .social-area .social-icone a svg {
+  stroke-width: 2;
+  width: 20px;
+  color: var(--color-lightn);
+  transition: var(--transition);
+}
+.contact-form-wrapper {
+  box-shadow: var(--shadow-1);
+  padding: 30px;
+  border-radius: 10px;
+  margin-left: 20px;
+  height: 100%;
+}
+.contact-form-wrapper label {
+  font-size: 12px;
+  color: #a0a8b3;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  margin-bottom: 14px;
+  text-align: left;
+  display: block;
+}
+.contact-form-wrapper input {
+  background-color: #191b1e;
+  border-radius: 6px;
+  height: 55px;
+  transition: var(--transition);
+  border: 2px solid #191b1e;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: var(--font-secondary);
+  color: var(--color-lightn);
+  box-shadow: var(--inner-shadow);
+  letter-spacing: 1px;
+}
+.contact-form-wrapper textarea {
+  min-height: 235px;
+  background-color: #191b1e;
+  border-radius: 6px;
+  padding: 0;
+  transition: var(--transition);
+  border: 2px solid #191b1e;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: var(--font-secondary);
+  color: var(--color-lightn);
+  box-shadow: var(--inner-shadow);
+  letter-spacing: 1px;
+  resize: none;
+}
+.contact-form-wrapper .introduce {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form-wrapper .introduce input {
+  width: 100%;
+}
+.rn-portfolio,
+.rn-blog {
+  text-align: left;
+  padding: 30px;
+  position: relative;
+  border-radius: 20px;
+  background: var(--background-color-1);
+  box-shadow: var(--shadow-1);
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  transition: 0.5s all ease-in-out;
+  display: inline-block;
+}
+.rn-portfolio .inner .thumbnail a,
+.rn-blog .inner .thumbnail a {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.rn-portfolio .inner .thumbnail a img,
+.rn-blog .inner .thumbnail a img {
+  width: 100%;
+  transition: var(--transition);
+  height: auto;
+  object-fit: cover;
+}
+.rn-portfolio .inner .content,
+.rn-blog .inner .content {
+  padding-top: 18px;
+}
+.rn-portfolio .inner .content .category-info,
+.rn-blog .inner .content .category-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.rn-portfolio .inner .content .category-info .category-list,
+.rn-blog .inner .content .category-info .category-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.rn-portfolio .inner .content .category-info .category-list a,
+.rn-blog .inner .content .category-info .category-list a {
+  color: var(--color-primary);
+  font-weight: 500;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+}
+.rn-portfolio .inner .content .category-info .meta span,
+.rn-blog .inner .content .category-info .meta span {
+  color: var(--color-lightn);
+  font-weight: 500;
+  font-family: var(--font-primary);
+  font-size: 13px;
+}
+.rn-portfolio .inner .content .category-info .meta span i,
+.rn-blog .inner .content .category-info .meta span i {
+  margin-right: 2px;
+  font-size: 13px;
+  transition: var(--transition);
+}
+.rn-portfolio .inner .content .category-info .meta span a i,
+.rn-blog .inner .content .category-info .meta span a i {
+  margin-right: 2px;
+  font-size: 13px;
+  transition: var(--transition);
+}
+.rn-portfolio .inner .content .title,
+.rn-blog .inner .content .title {
+  margin: 0;
+}
+.rn-portfolio .inner .content .title a,
+.rn-blog .inner .content .title a {
+  transition: var(--transition);
+  color: var(--color-lightn);
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 34px;
+  display: inline-block;
+}
+.rn-portfolio .inner .content .title a i,
+.rn-blog .inner .content .title a i {
+  font-size: 0;
+  position: relative;
+  top: 10px;
+  transition: var(--transition);
+  opacity: 0;
+}
+.rn-portfolio::before,
+.rn-blog::before {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: -1;
+}
+.backto-top > div {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 50%;
+  background-color: #212428;
+  text-align: center;
+  z-index: 999 !important;
+  box-shadow: var(--shadow-1);
+}
+.backto-top > div::after {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: -1;
+}
+
+.backto-top svg {
+  font-size: 14px !important;
+  color: var(--color-light);
+  width: 27px;
+  height: 27px;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-slick-activation .rn-portfolio-slick {
+  padding: 35px 15px;
+}
+.liststyle {
+  padding: 0;
+  list-style: none;
+}
+.slick-initialized .slick-slide {
+  margin-bottom: -10px;
+}
+.slick-initialized .slick-slide {
+  margin-bottom: 0 !important;
+}
+.slick-arrow-style-one .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  box-shadow: var(--shadow-1);
+  background-color: #212428;
+  left: -18px;
+  border: 0;
+  z-index: 2;
+}
+.slick-arrow-style-one .next-arrow.slick-arrow {
+  left: auto;
+  right: -18px;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+    </style>
+    <!-- <link
+      rel="preload"
+      href="assets/css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/style.css"
+    /></noscript> -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="assets/js/custom.js" async></script>
+  </head>
+
+  <body
+    class="template-color-1 spybody"
+    data-spy="scroll"
+    data-bs-target=".navbar-example2"
+    data-offset="150"
+  >
     <!-- header - developer home -->
     <!-- Start Header -->
-    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
-        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
-            <!-- Start Header Left -->
-            <div class="col-lg-2 col-6">
-                <div class="header-left">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo/HamillDesigns circle.png" width="100" alt="logo">
-                        </a>
-                    </div>
-                </div>
+    <header
+      class="rn-header haeder-default black-logo-version header--fixed header--sticky"
+    >
+      <div
+        class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center"
+      >
+        <!-- Start Header Left -->
+        <div class="col-lg-2 col-6">
+          <div class="header-left">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  src="assets/images/logo/HamillDesigns_circle.webp"
+                  width="100"
+                  alt="logo"
+                />
+              </a>
             </div>
-            <!-- End Header Left -->
-            <!-- Start Header Center -->
-            <div class="col-lg-10 col-6">
-                <div class="header-center">
-                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
-                        <!-- Start Mainmanu Nav -->
-                        <ul class="primary-menu nav nav-pills">
-                            <li class="nav-item current"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
-<!--                             <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li> -->
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
-                        </ul>
-                        <!-- End Mainmanu Nav -->
-                    </nav>
-                </div>
-            </div>
-            <!-- End Header Center -->
+          </div>
         </div>
+        <!-- End Header Left -->
+        <!-- Start Header Center -->
+        <div class="col-lg-10 col-6">
+          <div class="header-center">
+            <nav
+              id="sideNav"
+              class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav"
+            >
+              <!-- Start Mainmanu Nav -->
+              <ul class="primary-menu nav nav-pills">
+                <li class="nav-item current">
+                  <a class="nav-link smoth-animation active" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <!--                             <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li> -->
+                <li class="nav-item">
+                  <a class="nav-link smoth-animation" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smoth-animation" href="#portfolio"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smoth-animation" href="#contacts"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <!-- End Mainmanu Nav -->
+            </nav>
+          </div>
+        </div>
+        <!-- End Header Center -->
+      </div>
     </header>
     <!-- End Header Area -->
 
     <!-- Start Popup Mobile Menu  -->
     <div class="popup-mobile-menu">
-        <div class="inner">
-            <div class="menu-top">
-                <div class="menu-header">
-                    <a class="logo" href="index.html">
-                        <img src="assets/images/logo/logo.png" alt="Personal Portfolio">
-                    </a>
-                    <div class="close-button">
-                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
-                    </div>
-                </div>
-                <p class="discription">
-                </p>
+      <div class="inner">
+        <div class="menu-top">
+          <div class="menu-header">
+            <a class="logo" href="index.html">
+              <img
+                src="assets/images/logo/logo.webp"
+                alt="Personal Portfolio"
+              />
+            </a>
+            <div class="close-button">
+              <button class="close-menu-activation close">
+                <i data-feather="x"></i>
+              </button>
             </div>
-            <div class="content">
-                <ul class="primary-menu nav nav-pills onepagenav">
-                    <li class="nav-item current"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
-<!--                             <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li> -->
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
-                </ul>
-                <!-- social sharea area -->
-                <div class="social-share-style-1 mt--40">
-                    <span class="title">find with me</span>
-                    <ul class="social-share d-flex liststyle">
-                        <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                </svg></a>
-                        </li>
-                        <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg></a>
-                        </li>
-                        <li class="linkedin"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- end -->
-            </div>
+          </div>
+          <p class="discription"></p>
         </div>
+        <div class="content">
+          <ul class="primary-menu nav nav-pills onepagenav">
+            <li class="nav-item current">
+              <a class="nav-link smoth-animation active" href="#home">Home</a>
+            </li>
+            <!--                             <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li> -->
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-animation" href="#contacts">Contact</a>
+            </li>
+          </ul>
+          <!-- social sharea area -->
+          <div class="social-share-style-1 mt--40">
+            <span class="title">find with me</span>
+            <ul class="social-share d-flex liststyle">
+              <li class="facebook">
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-facebook"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    ></path></svg></a>
+              </li>
+              <li class="instagram">
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-instagram"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+              </li>
+              <li class="linkedin">
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-linkedin"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    ></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle></svg></a>
+              </li>
+            </ul>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
     </div>
     <!-- End Popup Mobile Menu  -->
 
     <main class="main-page-wrapper">
-
-        <!-- Start Slider Area -->
-        <div id="home" class="rn-slide-area">
-            <div class="slide slider-style-3">
-                <div class="container">
-                    <div class="row slider-wrapper">
-                        <div class="order-2 order-xl-1 col-lg-12 col-xl-5 mt_lg--50 mt_md--50 mt_sm--50">
-                            <div class="slider-info">
-                                <div class="row">
-                                    <div class="col-xl-12 col-lg-12 col-12">
-                                        <div class="user-info-top">
-                                            <div class="user-info-header">
-                                                <div class="user">
-                                                    <i data-feather="user"></i>
-                                                </div>
-                                                <h2 class="title">
-                                                    Hi, I’m <span>Shane</span>
-                                                </h2>
-                                                <p class="disc">Web developer working for F9 Brands.</p>
-                                            </div>
-                                            <div class="user-info-footer">
-                                                <div class="info">
-                                                    <i data-feather="file"></i>
-                                                    <span>Web developer</span>
-                                                </div>
-                                                <div class="info">
-                                                    <i data-feather="mail"></i>
-                                                    <span>shane@hamilldesigns.com</span>
-                                                </div>
-                                                <div class="info">
-                                                    <i data-feather="map-pin"></i>
-                                                    <span>Franklin, TN</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-12 col-lg-12 col-12">
-                                        <div class="user-info-bottom">
-                                            <span>Downloads: </span>
-                                            <div class="button-wrapper d-flex">
-                                                <a class="rn-btn mr--30" href="assets/files/ShaneDHamill_Resume_2025.pdf" target="_blank"><span>DOWNLOAD CV</span></a>
-                                                <a class="rn-btn" href="#contacts"><span>CONTACT ME</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+      <!-- Start Slider Area -->
+      <div id="home" class="rn-slide-area">
+        <div class="slide slider-style-3">
+          <div class="container">
+            <div class="row slider-wrapper">
+              <div
+                class="order-2 order-xl-1 col-lg-12 col-xl-5 mt_lg--50 mt_md--50 mt_sm--50"
+              >
+                <div class="slider-info">
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-12">
+                      <div class="user-info-top">
+                        <div class="user-info-header">
+                          <div class="user">
+                            <i data-feather="user"></i>
+                          </div>
+                          <h2 class="title">Hi, I’m <span>Shane</span></h2>
+                          <p class="disc">
+                            Web developer working for F9 Brands.
+                          </p>
                         </div>
-
-                        <div class="order-1 order-xl-2 col-lg-12 col-xl-7">
-                            <div class="background-image-area">
-                                <div class="thumbnail-image">
-                                    <img src="assets/images/about/professional_look_color copy.png" alt="Personal Portfolio">
-                                </div>
-                            </div>
+                        <div class="user-info-footer">
+                          <div class="info">
+                            <i data-feather="file"></i>
+                            <span>Web developer</span>
+                          </div>
+                          <div class="info">
+                            <i data-feather="mail"></i>
+                            <span>shane@hamilldesigns.com</span>
+                          </div>
+                          <div class="info">
+                            <i data-feather="map-pin"></i>
+                            <span>Franklin, TN</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
+
+                    <div class="col-xl-12 col-lg-12 col-12">
+                      <div class="user-info-bottom">
+                        <span>Downloads: </span>
+                        <div class="button-wrapper d-flex">
+                          <a
+                            class="rn-btn mr--30"
+                            href="assets/files/ShaneDHamill_Resume_2025.pdf"
+                            target="_blank"
+                            ><span>DOWNLOAD CV</span></a
+                          >
+                          <a class="rn-btn" href="#contacts"
+                            ><span>CONTACT ME</span></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div class="order-1 order-xl-2 col-lg-12 col-xl-7">
+                <div class="background-image-area">
+                  <div class="thumbnail-image">
+                    <img
+                      src="assets/images/about/professional_look_color_copy.webp"
+                      alt="Personal Portfolio"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- End Slider Area -->
-                <!-- Start Resume Area -->
-                <div class="rn-resume-area rn-section-gap section-separator" id="resume">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-                                    <span class="subtitle">30+ Years of Experience</span>
-                                    <h2 class="title">My Resume</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt--45">
-                            <div class="col-lg-12">
-                                <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">education</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " id="professional-tab" data-bs-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">professional
-                                            Skills</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">relevant projects</a>
-                                    </li>
-                                </ul>
-        
-                                <!-- Start Tab Content Wrapper  -->
-                                <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="rn-nav-content tab-content" id="myTabContents">
-        
-                                    <!-- Start Single Tab  -->
-                                    <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel" aria-labelledby="education-tab">
-                                        <div class="personal-experience-inner mt--40">
-                                            <div class="row">
-                                                <!-- Start Skill List Area  -->
-                                                <div class="col-lg-6 col-md-12 col-12">
-                                                    <div class="content">
-                                                        <span class="subtitle">1990 - 2021</span>
-                                                        <h4 class="maintitle">Education</h4>
-                                                        <div class="experience-list">
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Volunteer State Community College</h4>
-                                                                            <span>Associates of Applied Science in Computer Programming  (2018 - 2021)</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Course work in statistics, C++, Python, C#, ASP.net, HTML, CSS, JavaScript, jQuery, JSON, Node.JS, Express.JS, Object-Oriented Programming, Knowledgeable in web application development, Highly proficient in Microsoft Office, Visual Studio 2019, Visual Studio Code, Relational databases (Access, SQL, MySQL), API’s, Windows and Apple environments, knowledge with Git and Github</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-                                                             <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Udemy</h4>
-                                                                            <span>Become a WordPress Developer: Unlocking Power with Code (October 2021)</span>
-                                                                        </div>
-                                                                        <div class="date-of-time">
-                                                                            <span>Hours/35.5</span>
-                                                                        </div>
-                                                                  </div>
-                                                                    <p class="description">Course training in PHP, JavaScript, WordPress theming & the WP REST API to Create Custom & Interactive WordPress Websites. Created a fictional university website. Certificate no: UC-6a5db46c-641c-49c2-9c05-1d05b204454b</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-                                                             <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Udemy</h4>
-                                                                            <span>The Complete 2021 Web Development Bootcamp Certification  (June 2021)</span>
-                                                                        </div>
-                                                                        <div class="date-of-time">
-                                                                            <span>Hours/55</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Course training in HTML5, CSS3, Javascript ES6, NodeJS, jQuery, Git/GitHub, REST, APIs, SQL, NoSQL (MongoDB), Authentication, React.js, React Hooks, deployed on GitHub, Heroku and Mongo Atlas. Certificate no: UC-8428d68f-86c4-4ff4-a00e-5b0ef70b4bd4</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>West Virginia University</h4>
-                                                                            <span>College of Music (1990 - 1992)</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Studied Music Composition</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End Skill List Area  -->
-        
-                                                <!-- Start Skill List Area 2nd  -->
-                                                <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
-                                                    <div class="content">
-                                                        <span class="subtitle">1993 - Present</span>
-                                                        <h4 class="maintitle">Job Experience</h4>
-                                                        <div class="experience-list">
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Cabinets To Go</h4>
-                                                                            <span>Senior Web Developer (January 2024 - Present)</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Same duties as previous role adding the supervision of the web IT team. Assisting the team in problem solving and troubleshooting issues team members face. Strategize, prioritize and plan projects brought to the web IT team utilizing each team members gifts and talents to create efficiency and to meet deadlines.</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Cabinets To Go</h4>
-                                                                            <span>Web Developer (November 2021 - January 2024)</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Maintain and build new websites for the F9 Brands companies. Build new websites in Shopify Plus by coding new schema templates, sections and snippets, using HTML, CSS, JavaScript, and JSON and Liquid syntax. Built a company-wide employee review web application using HTML, CSS, JavaScript, Laravel/PHP and MySQL.
-                                                                    Migrated gracioushome.com from BigCommerce to Shopify Plus platform.
-                                                                    Website maintained – cabinetstogo.com (Shopify Plus), gracioushome.com (Shopify Plus)
-                                                                    Website built and customized theme – thosbaker.com (Shopify Plus), gracioushome.com (Shopify Plus)<br/>Website built - F9brands.com (basic HTM)</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>DCR Nashville</h4>
-                                                                            <span>Operations Manager / Account Manager (January 2017 - September 2021)</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Aided in increasing company annual revenue from a $1.5 million to $6 million (pre-COVID). Updated and maintained rental inventory database (Current-RMS), increasing efficiency in handling customer needs by 25%. Created new documents in web-based inventory database management system using HTML, CSS, and Liquid syntax to clarify quote layouts for customers, increasing customer trust by 30%. Managed existing clientele and developed business to business clients to maintain and increase revenue streams. Developed and implemented systems, processes, and strategy for operations which increased efficiency by 60% and decreased errors by 70%. Hired operations staff and independent contractors. Improved quality control of rental equipment which extended product life by 20%. Asset management, including asset analysis, ROI and purchasing for rental and sales equipment to improve utilization of assets and increase profits by 30%. </p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-                                                             <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>LabeLive</h4>
-                                                                            <span>General Manager (September 2014 - January 2017)</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Assisted in increasing company revenue from $750,000 to $2.5 million. Developed and implemented systems, processes, and strategy for operations. Handled day-to-day business operations to increase efficiency. Developed company business strategy and shaped company culture. Hired operations staff and independent contractors. Improved quality control of rental equipment.  Developed marketing strategy both internally and externally. Asset management, including asset analysis, ROI and purchasing for rental and sales equipment. Worked to build business-to-business clientele. Facilitated a diversified strategic plan.</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-                                                              <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>4Wall Lighting</h4>
-                                                                            <span>Vice President of Business Development (June 2012 - September 2014)</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Generated $2 million in rentals and sales. Developed strategic business-to-business partnerships and live events clientele partnerships. Built and grew customer relationships by providing exceptional service for clients.</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-                                                             <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>More work experience available upon request</h4>
-                                                                            <span>References available upon request</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description"></p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End Skill List Area  -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Tab  -->
-        
-                                    <!-- Start Single Tab  -->
-                                    <div class="tab-pane fade " id="professional" role="tabpanel" aria-labelledby="professional-tab">
-                                        <div class="personal-experience-inner mt--40">
-                                            <div class="row row--40">
-        
-                                                <!-- Start Single Progressbar  -->
-                                                <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
-                                                    <div class="progress-wrapper">
-                                                        <div class="content">
-                                                            <span class="subtitle">Features</span>
-                                                            <h4 class="maintitle">Development Skill</h4>
-                                                            <!-- Start Single Progress Charts -->
-                                                            <div class="progress-charts">
-                                                                <h6 class="heading heading-h6">HTML</h6>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"><span
-                                                                            class="percent-label">99%</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single Progress Charts -->
-        
-                                                            <!-- Start Single Progress Charts -->
-                                                            <div class="progress-charts">
-                                                                <h6 class="heading heading-h6">CSS</h6>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><span
-                                                                            class="percent-label">95%</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single Progress Charts -->
-        
-                                                            <!-- Start Single Progress Charts -->
-                                                            <div class="progress-charts">
-                                                                <h6 class="heading heading-h6">JAVASCRIPT</h6>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                                            class="percent-label">90%</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single Progress Charts -->
-        
-                                                            <!-- Start Single Progress Charts -->
-                                                            <div class="progress-charts">
-                                                                <h6 class="heading heading-h6">Laravel / PHP</h6>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span
-                                                                            class="percent-label">75%</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single Progress Charts -->
-        
-                                                            <!-- Start Single Progress Charts -->
-                                                            <div class="progress-charts">
-                                                                <h6 class="heading heading-h6">Shopify Theme Development & Customization</h6>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><span
-                                                                            class="percent-label">95%</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single Progress Charts -->
-        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End Single Progressbar  -->
-        
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Tab  -->
-        
-                                    <!-- Start Single Tab  -->
-                                    <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-                                        <div class="personal-experience-inner mt--40">
-                                            <div class="row">
-                                                <!-- Start Skill List Area  -->
-                                                <div class="col-lg-6 col-md-12 col-12">
-                                                    <div class="content">
-                                                        <span class="subtitle">2021 - Present</span>
-                                                        <h4 class="maintitle">Employer Projects</h4>
-                                                        <div class="experience-list">
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Built & Migrated eCommerce Store in Shopify</h4>
-                                                                            <span>Gracious Home (2023)</span>
-                                                                        </div>
-                                                                        <div class="date-of-time">
-                                                                            <span><a href="https://gracioushome.com" target="_blank">gracioushome.com</a></span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Gracioushome.com was a BigCommerce eCommerce store when I arrived at Cabinets To Go. They wanted to be able to easily sync the product inventory to the eCommerce site so we concluded that gracioushome.com should be moved to the Shopify Plus platform with the other stores owned by the parent company F9 Brands. I started with a purchased theme and customized it to meet the needs of the marketing and products teams, as well as to automate features for the web administrator. Products, customers and orders syncronize with Oracle NetSuite (ERP Software) and Pimberly (SaaS PIM Software) via integration softwares.</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Built New eCommerce Store in Shopify</h4>
-                                                                            <span>ThosBaker.com (2022)</span>
-                                                                        </div>
-                                                                        <div class="date-of-time">
-                                                                            <span><a href="https://thosbaker.com" target="_blank">thosbaker.com</a></span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Thos Baker Outdoor Furniture was aquired by F9 Investments from Balsam Hill in 2020. A new website needed to be created to sell the Thos Baker products online. I started with a purchased theme and customized it to meet the needs of the marketing and products teams, as well as to automate features for the web administrator. Products, customers and orders syncronize with Oracle NetSuite (ERP Software) and Pimberly (SaaS PIM Software) via integration softwares. A revised site is coming soon with a fully customized free theme.</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Built New eCommerce B2B Store in Shopify</h4>
-                                                                            <span>F9 Builder Services (2024)</span>
-                                                                        </div>
-                                                                        <div class="date-of-time">
-                                                                            <span><a href="#">f9builderservices.com</a></span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">F9 Builder Service offers comprehensive single and multi-family builder services. Leveraging their well-established national logistics network, rapid delivery capabilities, and purchasing influence, they empower their clients with a competitive edge. The site was developed in Shopify using a paid theme with B2B capabilites and customized to meet the needs of the business customers. Products, customers and orders syncronize with Oracle NetSuite (ERP Software) via integration software. The site will be launching soon when product integration is complete.</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-                                                             <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>Built Employee Annual Review Web Application in Laravel/PHP</h4>
-                                                                            <span>Cabinets To Go, Gracious Home, Southwind Building Products (2022)</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Employee annual reviews were still done on paper when I arrived at Cabinets To Go. With over 400 employees, it proved challenging to expedite the review process for the executive and HR teams. I was handed a printout of the review form and was asked if I could make this into a digital format form. After many questions, I realized this was not going to be a small task. All data needed to be stored for each employee. There needed to be a heirarchical system so that store manager could see their employee reviews, but could not see any other employee review. Regional managers needed to see all the store managers reviews and their employee reviews, but not any other reviews outside of their region. There also needed to be an approval process that, once approved by lower tier managers, no more editing could be done to the review data. Finally, the review had to be exported to a pdf to be uploaded to the company DocuSign system. This has become an every changing and evolving project. I have been the sole programmer on this project. I used Laravel 9, PHP, MySQL, Vanilla Javascript, and JQuery to develop this project.</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End Skill List Area  -->
-        
-                                                <!-- Start Skill List Area 2nd  -->
-                                                <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
-                                                    <div class="content">
-                                                        <span class="subtitle">2023 - Present</span>
-                                                        <h4 class="maintitle">Contract Work</h4>
-                                                        <div class="experience-list">
-        
-                                                            <!-- Start Single List  -->
-                                                            <div class="resume-single-list">
-                                                                <div class="inner">
-                                                                    <div class="heading">
-                                                                        <div class="title">
-                                                                            <h4>The Light Factory Website update and refresh</h4>
-                                                                            <span>thelightfactory.com (2024)</span>
-                                                                        </div>
-                                                                        <div class="date-of-time">
-                                                                            <span><a href="https://thelightfactory.com" target="_blank">thelightfactory.com</a></span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="description">Redesigned website for a live events production company based in Nashville, using WordPress. Increased SEO from a score of 31 to a score of 97.</p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Single List  -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End Skill List Area  -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Tab  -->
-    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Resume Area -->
-
-        <!-- Start Portfolio Area -->
-        <div id="portfolio" class="rn-portfolio-area portfolio-style-three rn-section-gap section-separator">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-                            <span class="subtitle">Take a look for yourself</span>
-                            <h2 class="title">My Portfolio</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--25 mt_md--5 mt_sm--5">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="portfolio-wrapper portfolio-slick-activation slick-arrow-style-one rn-slick-dot-style">
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" data-bs-platform="Shopify" data-bs-image="assets/images/portfolio/LL_image_1.png" data-bs-title="Lumber Liquidators" data-bs-link="https://lumberliquidators.com" data-bs-description="Lumber Liquidators was aquired by our parent company on October 2024. We built a Shopify site and launched it in less than two months. All products, customers and orders sync with Oracle NetSuite (our ERP).">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/LL_image_1.png" alt="Personal Portfolio Images" loading="lazy">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Shopify</a>
-                                                </div>
-                                                <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                      <span id="project-like-5"></span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)" id="project-like-5">Lumber Liquidators eCommerce site in Shopify Plus<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" data-bs-platform="Shopify" data-bs-image="assets/images/portfolio/gracioushome.png" data-bs-title="Gracious Home" data-bs-link="https://gracioushome.com" data-bs-description="Gracious Home used to be a BigCommerce site, but we migrated it to Shopify Plus in 2023. All products, customers and orders sync with Oracle NetSuite (our ERP)." data-bs-like-id="1">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/gracioushome.png" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Shopify</a>
-                                                </div>
-                                                <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                      <span id="project-like-1"></span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)" id="project-like-1">Gracioushome.com eCommerce site in Shopify Plus<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" data-bs-platform="Shopify2" data-bs-image="assets/images/portfolio/thosbaker.png" data-bs-title="Thos Baker" data-bs-link="https://thosbaker.com" data-bs-description="Thos Baker is a high-end outdoor furniture manufacturer. We built a new site in 2022 in the Shopify Plus platform. All products, customers and orders sync with Oracle NetSuite (our ERP)" data-bs-like-id="2">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/thosbaker.png" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Shopify</a>
-                                                </div>
-                                                <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                        <span id="project-like-2"></span></span>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Thosbaker.com eCommerce site in Shopify Plus<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" data-bs-platform="Laravel" data-bs-image="assets/images/portfolio/reviews.png" data-bs-title="Employee Review App" data-bs-link="" data-bs-description="This is a screenshot of the dashboard for the employee review application I built in 2022. It continues to grow and change depnding on the needs of HR. Unfortunately, I cannot link to it as it contains sensitive information. However, I hope to one day have a demo version available for guests." data-bs-like-id="3">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/reviews.png" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Laravel</a>
-                                                </div>
-                                                <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                        <span id="project-like-3"></span></span>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Annual Employee Review App built using Laravel/PHP and MySQL<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" data-bs-platform="Wordpress" data-bs-image="assets/images/portfolio/lightfactory.png" data-bs-title="The Light Factory" data-bs-link="https://thelightfactory.com" data-bs-description="I was contacted by The Light Factory to see if I could assist with redesigning their website and increase their SEO. The are on the Wordpress platform. To make it easy for them to make changes as needed, I enlisted the help of the Elemento plug-in. This allows them to keep their site fresh as often as they wish. I increased their SEO score from 31 to 97." data-bs-like-id="4">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/lightfactory.png" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Wordpress</a>
-                                                </div>
-                                                <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                        <span id="project-like-4"></span></span>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Thelightfactory.com website built in WordPress<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <!-- End Slider Area -->
+      <!-- Start Resume Area -->
+      <div class="rn-resume-area rn-section-gap section-separator" id="resume">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                data-aos-once="true"
+                class="section-title text-center"
+              >
+                <span class="subtitle">30+ Years of Experience</span>
+                <h2 class="title">My Resume</h2>
+              </div>
             </div>
-        </div>
-        <!-- End portfolio Area -->
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
+          </div>
+          <div class="row mt--45">
+            <div class="col-lg-12">
+              <ul
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                data-aos-once="true"
+                class="rn-nav-list nav nav-tabs"
+                id="myTabs"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="education-tab"
+                    data-bs-toggle="tab"
+                    href="#education"
+                    role="tab"
+                    aria-controls="education"
+                    aria-selected="true"
+                    >education</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="professional-tab"
+                    data-bs-toggle="tab"
+                    href="#professional"
+                    role="tab"
+                    aria-controls="professional"
+                    aria-selected="false"
+                    >professional Skills</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="experience-tab"
+                    data-bs-toggle="tab"
+                    href="#experience"
+                    role="tab"
+                    aria-controls="experience"
+                    aria-selected="false"
+                    >relevant projects</a
+                  >
+                </li>
+              </ul>
 
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/portfolio-04.jpg" alt="slide">
-                                    </div>
+              <!-- Start Tab Content Wrapper  -->
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="200"
+                data-aos-once="true"
+                class="rn-nav-content tab-content"
+                id="myTabContents"
+              >
+                <!-- Start Single Tab  -->
+                <div
+                  class="tab-pane show active fade single-tab-area"
+                  id="education"
+                  role="tabpanel"
+                  aria-labelledby="education-tab"
+                >
+                  <div class="personal-experience-inner mt--40">
+                    <div class="row">
+                      <!-- Start Skill List Area  -->
+                      <div class="col-lg-6 col-md-12 col-12">
+                        <div class="content">
+                          <span class="subtitle">1990 - 2021</span>
+                          <h4 class="maintitle">Education</h4>
+                          <div class="experience-list">
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>Volunteer State Community College</h4>
+                                    <span
+                                      >Associates of Applied Science in Computer
+                                      Programming (2018 - 2021)</span
+                                    >
+                                  </div>
                                 </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Featured - Design</span> App Design Development.
-                                    </h3>
-                                    <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
-                                    
-                                    <div class="button-group mt--20">
-                                        <a href="javascript:void(0);" class="rn-btn thumbs-icon" id="project-like">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a href="javascript:void(0);" class="rn-btn" id="project-link" target="_blank">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal Portfolio area -->
-         <!-- Start Contact section -->
-        <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <span class="subtitle">Contact</span>
-                            <h2 class="title">Reach out to me</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
-                    <div class="col-lg-5">
-                        <div class="contact-about-area">
-                            <div class="thumbnail">
-                                <img src="assets/images/about/coding-g766553f34_1920.webp" alt="contact-img">
-                            </div>
-                            <div class="title-area">
-                                <h4 class="title">Shane Hamill</h4>
-                                <span>Senior Web Developer</span>
-                            </div>
-                            <div class="description">
-                                <p>I am available for freelance work.
+                                <p class="description">
+                                  Course work in statistics, C++, Python, C#,
+                                  ASP.net, HTML, CSS, JavaScript, jQuery, JSON,
+                                  Node.JS, Express.JS, Object-Oriented
+                                  Programming, Knowledgeable in web application
+                                  development, Highly proficient in Microsoft
+                                  Office, Visual Studio 2019, Visual Studio
+                                  Code, Relational databases (Access, SQL,
+                                  MySQL), API’s, Windows and Apple environments,
+                                  knowledge with Git and Github
                                 </p>
-                                <span class="mail">Email: <a href="mailto:shane@hamilldesigns.com">shane@hamilldesigns.com</a></span>
+                              </div>
                             </div>
-                            <div class="social-area">
-                                <div class="name">FIND ME</div>
-                                <div class="social-icone">
-                                    <a href="https://www.facebook.com/shane.hamill1/" target="_blank"><i data-feather="facebook"></i></a>
-                                    <a href="https://www.linkedin.com/in/shane-d-hamill/" target="_blank"><i data-feather="linkedin"></i></a>
+                            <!-- End Single List  -->
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>Udemy</h4>
+                                    <span
+                                      >Become a WordPress Developer: Unlocking
+                                      Power with Code (October 2021)</span
+                                    >
+                                  </div>
+                                  <div class="date-of-time">
+                                    <span>Hours/35.5</span>
+                                  </div>
                                 </div>
+                                <p class="description">
+                                  Course training in PHP, JavaScript, WordPress
+                                  theming & the WP REST API to Create Custom &
+                                  Interactive WordPress Websites. Created a
+                                  fictional university website. Certificate no:
+                                  UC-6a5db46c-641c-49c2-9c05-1d05b204454b
+                                </p>
+                              </div>
                             </div>
-                        </div>
-                    </div>
-                    <div data-aos-delay="600" class="col-lg-7 contact-input">
-                        <div class="contact-form-wrapper">
-                            <div class="introduce">
-                                <form class="rnt-contact-form rwt-dynamic-form row" action="https://formspree.io/f/mwkaandv" method="POST" id="email-form">
-                                    <input type="hidden" name="subject" value="Website form email" />
-                                    <input type="hidden" name="zip" id="botPot" />
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="contact-name">Your Name</label>
-                                            <input class="form-control form-control-lg" name="name" id="contact-name" type="text">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="contact-email">Email</label>
-                                            <input class="form-control form-control-sm" id="contact-email" name="email" type="email">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="contact-message">Your Message</label>
-                                            <textarea name="message" id="contact-message" cols="30" rows="10"></textarea>
-                                        </div>
-                                    </div>
-                                    <br />
-                                    <div class="col-lg-12">
-                                        <button name="submit" type="submit" id="submit" class="rn-btn" >
-                                            <span>SEND MESSAGE</span>
-                                            <i data-feather="arrow-right"></i>
-                                        </button>
-                                    </div>
-                                </form>
+                            <!-- End Single List  -->
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>Udemy</h4>
+                                    <span
+                                      >The Complete 2021 Web Development
+                                      Bootcamp Certification (June 2021)</span
+                                    >
+                                  </div>
+                                  <div class="date-of-time">
+                                    <span>Hours/55</span>
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Course training in HTML5, CSS3, Javascript
+                                  ES6, NodeJS, jQuery, Git/GitHub, REST, APIs,
+                                  SQL, NoSQL (MongoDB), Authentication,
+                                  React.js, React Hooks, deployed on GitHub,
+                                  Heroku and Mongo Atlas. Certificate no:
+                                  UC-8428d68f-86c4-4ff4-a00e-5b0ef70b4bd4
+                                </p>
+                              </div>
                             </div>
+                            <!-- End Single List  -->
+
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>West Virginia University</h4>
+                                    <span>College of Music (1990 - 1992)</span>
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Studied Music Composition
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+                          </div>
                         </div>
+                      </div>
+                      <!-- End Skill List Area  -->
+
+                      <!-- Start Skill List Area 2nd  -->
+                      <div
+                        class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60"
+                      >
+                        <div class="content">
+                          <span class="subtitle">1993 - Present</span>
+                          <h4 class="maintitle">Job Experience</h4>
+                          <div class="experience-list">
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>Cabinets To Go</h4>
+                                    <span
+                                      >Senior Web Developer (January 2024 -
+                                      Present)</span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Same duties as previous role adding the
+                                  supervision of the web IT team. Assisting the
+                                  team in problem solving and troubleshooting
+                                  issues team members face. Strategize,
+                                  prioritize and plan projects brought to the
+                                  web IT team utilizing each team members gifts
+                                  and talents to create efficiency and to meet
+                                  deadlines.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>Cabinets To Go</h4>
+                                    <span
+                                      >Web Developer (November 2021 - January
+                                      2024)</span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Maintain and build new websites for the F9
+                                  Brands companies. Build new websites in
+                                  Shopify Plus by coding new schema templates,
+                                  sections and snippets, using HTML, CSS,
+                                  JavaScript, and JSON and Liquid syntax. Built
+                                  a company-wide employee review web application
+                                  using HTML, CSS, JavaScript, Laravel/PHP and
+                                  MySQL. Migrated gracioushome.com from
+                                  BigCommerce to Shopify Plus platform. Website
+                                  maintained – cabinetstogo.com (Shopify Plus),
+                                  gracioushome.com (Shopify Plus) Website built
+                                  and customized theme – thosbaker.com (Shopify
+                                  Plus), gracioushome.com (Shopify Plus)<br />Website
+                                  built - F9brands.com (basic HTM)
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>DCR Nashville</h4>
+                                    <span
+                                      >Operations Manager / Account Manager
+                                      (January 2017 - September 2021)</span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Aided in increasing company annual revenue
+                                  from a $1.5 million to $6 million (pre-COVID).
+                                  Updated and maintained rental inventory
+                                  database (Current-RMS), increasing efficiency
+                                  in handling customer needs by 25%. Created new
+                                  documents in web-based inventory database
+                                  management system using HTML, CSS, and Liquid
+                                  syntax to clarify quote layouts for customers,
+                                  increasing customer trust by 30%. Managed
+                                  existing clientele and developed business to
+                                  business clients to maintain and increase
+                                  revenue streams. Developed and implemented
+                                  systems, processes, and strategy for
+                                  operations which increased efficiency by 60%
+                                  and decreased errors by 70%. Hired operations
+                                  staff and independent contractors. Improved
+                                  quality control of rental equipment which
+                                  extended product life by 20%. Asset
+                                  management, including asset analysis, ROI and
+                                  purchasing for rental and sales equipment to
+                                  improve utilization of assets and increase
+                                  profits by 30%.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>LabeLive</h4>
+                                    <span
+                                      >General Manager (September 2014 - January
+                                      2017)</span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Assisted in increasing company revenue from
+                                  $750,000 to $2.5 million. Developed and
+                                  implemented systems, processes, and strategy
+                                  for operations. Handled day-to-day business
+                                  operations to increase efficiency. Developed
+                                  company business strategy and shaped company
+                                  culture. Hired operations staff and
+                                  independent contractors. Improved quality
+                                  control of rental equipment. Developed
+                                  marketing strategy both internally and
+                                  externally. Asset management, including asset
+                                  analysis, ROI and purchasing for rental and
+                                  sales equipment. Worked to build
+                                  business-to-business clientele. Facilitated a
+                                  diversified strategic plan.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>4Wall Lighting</h4>
+                                    <span
+                                      >Vice President of Business Development
+                                      (June 2012 - September 2014)</span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Generated $2 million in rentals and sales.
+                                  Developed strategic business-to-business
+                                  partnerships and live events clientele
+                                  partnerships. Built and grew customer
+                                  relationships by providing exceptional service
+                                  for clients.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>
+                                      More work experience available upon
+                                      request
+                                    </h4>
+                                    <span
+                                      >References available upon request</span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description"></p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Skill List Area  -->
                     </div>
+                  </div>
                 </div>
+                <!-- End Single Tab  -->
+
+                <!-- Start Single Tab  -->
+                <div
+                  class="tab-pane fade"
+                  id="professional"
+                  role="tabpanel"
+                  aria-labelledby="professional-tab"
+                >
+                  <div class="personal-experience-inner mt--40">
+                    <div class="row row--40">
+                      <!-- Start Single Progressbar  -->
+                      <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
+                        <div class="progress-wrapper">
+                          <div class="content">
+                            <span class="subtitle">Features</span>
+                            <h4 class="maintitle">Development Skill</h4>
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">HTML</h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.5s"
+                                  data-wow-delay=".3s"
+                                  role="progressbar"
+                                  style="width: 99%"
+                                  aria-valuenow="99"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">99%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">CSS</h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.6s"
+                                  data-wow-delay=".4s"
+                                  role="progressbar"
+                                  style="width: 95%"
+                                  aria-valuenow="95"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">95%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">JAVASCRIPT</h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.7s"
+                                  data-wow-delay=".5s"
+                                  role="progressbar"
+                                  style="width: 90%"
+                                  aria-valuenow="85"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">90%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">Laravel / PHP</h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.8s"
+                                  data-wow-delay=".6s"
+                                  role="progressbar"
+                                  style="width: 75%"
+                                  aria-valuenow="75"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">75%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">
+                                Shopify Theme Development & Customization
+                              </h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.9s"
+                                  data-wow-delay=".7s"
+                                  role="progressbar"
+                                  style="width: 95%"
+                                  aria-valuenow="95"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">95%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Single Progressbar  -->
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Tab  -->
+
+                <!-- Start Single Tab  -->
+                <div
+                  class="tab-pane fade"
+                  id="experience"
+                  role="tabpanel"
+                  aria-labelledby="experience-tab"
+                >
+                  <div class="personal-experience-inner mt--40">
+                    <div class="row">
+                      <!-- Start Skill List Area  -->
+                      <div class="col-lg-6 col-md-12 col-12">
+                        <div class="content">
+                          <span class="subtitle">2021 - Present</span>
+                          <h4 class="maintitle">Employer Projects</h4>
+                          <div class="experience-list">
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>
+                                      Built & Migrated eCommerce Store in
+                                      Shopify
+                                    </h4>
+                                    <span>Gracious Home (2023)</span>
+                                  </div>
+                                  <div class="date-of-time">
+                                    <span
+                                      ><a
+                                        href="https://gracioushome.com"
+                                        target="_blank"
+                                        >gracioushome.com</a
+                                      ></span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Gracioushome.com was a BigCommerce eCommerce
+                                  store when I arrived at Cabinets To Go. They
+                                  wanted to be able to easily sync the product
+                                  inventory to the eCommerce site so we
+                                  concluded that gracioushome.com should be
+                                  moved to the Shopify Plus platform with the
+                                  other stores owned by the parent company F9
+                                  Brands. I started with a purchased theme and
+                                  customized it to meet the needs of the
+                                  marketing and products teams, as well as to
+                                  automate features for the web administrator.
+                                  Products, customers and orders syncronize with
+                                  Oracle NetSuite (ERP Software) and Pimberly
+                                  (SaaS PIM Software) via integration softwares.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>
+                                      Built New eCommerce Store in Shopify
+                                    </h4>
+                                    <span>ThosBaker.com (2022)</span>
+                                  </div>
+                                  <div class="date-of-time">
+                                    <span
+                                      ><a
+                                        href="https://thosbaker.com"
+                                        target="_blank"
+                                        >thosbaker.com</a
+                                      ></span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Thos Baker Outdoor Furniture was aquired by F9
+                                  Investments from Balsam Hill in 2020. A new
+                                  website needed to be created to sell the Thos
+                                  Baker products online. I started with a
+                                  purchased theme and customized it to meet the
+                                  needs of the marketing and products teams, as
+                                  well as to automate features for the web
+                                  administrator. Products, customers and orders
+                                  syncronize with Oracle NetSuite (ERP Software)
+                                  and Pimberly (SaaS PIM Software) via
+                                  integration softwares. A revised site is
+                                  coming soon with a fully customized free
+                                  theme.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>
+                                      Built New eCommerce B2B Store in Shopify
+                                    </h4>
+                                    <span>F9 Builder Services (2024)</span>
+                                  </div>
+                                  <div class="date-of-time">
+                                    <span
+                                      ><a href="#"
+                                        >f9builderservices.com</a
+                                      ></span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  F9 Builder Service offers comprehensive single
+                                  and multi-family builder services. Leveraging
+                                  their well-established national logistics
+                                  network, rapid delivery capabilities, and
+                                  purchasing influence, they empower their
+                                  clients with a competitive edge. The site was
+                                  developed in Shopify using a paid theme with
+                                  B2B capabilites and customized to meet the
+                                  needs of the business customers. Products,
+                                  customers and orders syncronize with Oracle
+                                  NetSuite (ERP Software) via integration
+                                  software. The site will be launching soon when
+                                  product integration is complete.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>
+                                      Built Employee Annual Review Web
+                                      Application in Laravel/PHP
+                                    </h4>
+                                    <span
+                                      >Cabinets To Go, Gracious Home, Southwind
+                                      Building Products (2022)</span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Employee annual reviews were still done on
+                                  paper when I arrived at Cabinets To Go. With
+                                  over 400 employees, it proved challenging to
+                                  expedite the review process for the executive
+                                  and HR teams. I was handed a printout of the
+                                  review form and was asked if I could make this
+                                  into a digital format form. After many
+                                  questions, I realized this was not going to be
+                                  a small task. All data needed to be stored for
+                                  each employee. There needed to be a
+                                  heirarchical system so that store manager
+                                  could see their employee reviews, but could
+                                  not see any other employee review. Regional
+                                  managers needed to see all the store managers
+                                  reviews and their employee reviews, but not
+                                  any other reviews outside of their region.
+                                  There also needed to be an approval process
+                                  that, once approved by lower tier managers, no
+                                  more editing could be done to the review data.
+                                  Finally, the review had to be exported to a
+                                  pdf to be uploaded to the company DocuSign
+                                  system. This has become an every changing and
+                                  evolving project. I have been the sole
+                                  programmer on this project. I used Laravel 9,
+                                  PHP, MySQL, Vanilla Javascript, and JQuery to
+                                  develop this project.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Skill List Area  -->
+
+                      <!-- Start Skill List Area 2nd  -->
+                      <div
+                        class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60"
+                      >
+                        <div class="content">
+                          <span class="subtitle">2023 - Present</span>
+                          <h4 class="maintitle">Contract Work</h4>
+                          <div class="experience-list">
+                            <!-- Start Single List  -->
+                            <div class="resume-single-list">
+                              <div class="inner">
+                                <div class="heading">
+                                  <div class="title">
+                                    <h4>
+                                      The Light Factory Website update and
+                                      refresh
+                                    </h4>
+                                    <span>thelightfactory.com (2024)</span>
+                                  </div>
+                                  <div class="date-of-time">
+                                    <span
+                                      ><a
+                                        href="https://thelightfactory.com"
+                                        target="_blank"
+                                        >thelightfactory.com</a
+                                      ></span
+                                    >
+                                  </div>
+                                </div>
+                                <p class="description">
+                                  Redesigned website for a live events
+                                  production company based in Nashville, using
+                                  WordPress. Increased SEO from a score of 31 to
+                                  a score of 97.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- End Single List  -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Skill List Area  -->
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Tab  -->
+              </div>
             </div>
+          </div>
         </div>
-        <!-- End Contuct section -->
-       <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-hidden="true">
+      </div>
+      <!-- End Resume Area -->
+
+      <!-- Start Portfolio Area -->
+      <div
+        id="portfolio"
+        class="rn-portfolio-area portfolio-style-three rn-section-gap section-separator"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                data-aos-once="true"
+                class="section-title text-center"
+              >
+                <span class="subtitle">Take a look for yourself</span>
+                <h2 class="title">My Portfolio</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row mt--25 mt_md--5 mt_sm--5">
+            <div class="col-lg-12">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="200"
+                data-aos-once="true"
+                class="portfolio-wrapper portfolio-slick-activation slick-arrow-style-one rn-slick-dot-style"
+              >
+                <!-- Start Single Portfolio  -->
+                <div class="rn-portfolio-slick">
+                  <div
+                    class="rn-portfolio"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
+                    data-bs-platform="Shopify"
+                    data-bs-image="assets/images/portfolio/LL_image_1.webp"
+                    data-bs-title="Lumber Liquidators"
+                    data-bs-link="https://lumberliquidators.com"
+                    data-bs-description="Lumber Liquidators was aquired by our parent company on October 2024. We built a Shopify site and launched it in less than two months. All products, customers and orders sync with Oracle NetSuite (our ERP)."
+                  >
+                    <div class="inner">
+                      <div class="thumbnail">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="assets/images/portfolio/LL_image_1.webp"
+                            alt="Personal Portfolio Images"
+                            loading="lazy"
+                          />
+                        </a>
+                      </div>
+                      <div class="content">
+                        <div class="category-info">
+                          <div class="category-list">
+                            <a href="javascript:void(0)">Shopify</a>
+                          </div>
+                          <div class="meta">
+                            <span
+                              ><a href="javascript:void(0)"
+                                ><i class="feather-heart"></i
+                              ></a>
+                              <span id="project-like-5"></span>
+                            </span>
+                          </div>
+                        </div>
+                        <h4 class="title">
+                          <a href="javascript:void(0)" id="project-like-5"
+                            >Lumber Liquidators eCommerce site in Shopify Plus<i
+                              class="feather-arrow-up-right"
+                            ></i
+                          ></a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Portfolio  -->
+                <!-- Start Single Portfolio  -->
+                <div class="rn-portfolio-slick">
+                  <div
+                    class="rn-portfolio"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
+                    data-bs-platform="Shopify"
+                    data-bs-image="assets/images/portfolio/gracioushome.webp"
+                    data-bs-title="Gracious Home"
+                    data-bs-link="https://gracioushome.com"
+                    data-bs-description="Gracious Home used to be a BigCommerce site, but we migrated it to Shopify Plus in 2023. All products, customers and orders sync with Oracle NetSuite (our ERP)."
+                    data-bs-like-id="1"
+                  >
+                    <div class="inner">
+                      <div class="thumbnail">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="assets/images/portfolio/gracioushome.webp"
+                            alt="Personal Portfolio Images"
+                            loading="lazy"
+                          />
+                        </a>
+                      </div>
+                      <div class="content">
+                        <div class="category-info">
+                          <div class="category-list">
+                            <a href="javascript:void(0)">Shopify</a>
+                          </div>
+                          <div class="meta">
+                            <span
+                              ><a href="javascript:void(0)"
+                                ><i class="feather-heart"></i
+                              ></a>
+                              <span id="project-like-1"></span>
+                            </span>
+                          </div>
+                        </div>
+                        <h4 class="title">
+                          <a href="javascript:void(0)" id="project-like-1"
+                            >Gracioushome.com eCommerce site in Shopify Plus<i
+                              class="feather-arrow-up-right"
+                            ></i
+                          ></a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Portfolio  -->
+
+                <!-- Start Single Portfolio  -->
+                <div class="rn-portfolio-slick">
+                  <div
+                    class="rn-portfolio"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
+                    data-bs-platform="Shopify2"
+                    data-bs-image="assets/images/portfolio/thosbaker.webp"
+                    data-bs-title="Thos Baker"
+                    data-bs-link="https://thosbaker.com"
+                    data-bs-description="Thos Baker is a high-end outdoor furniture manufacturer. We built a new site in 2022 in the Shopify Plus platform. All products, customers and orders sync with Oracle NetSuite (our ERP)"
+                    data-bs-like-id="2"
+                  >
+                    <div class="inner">
+                      <div class="thumbnail">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="assets/images/portfolio/thosbaker.webp"
+                            alt="Personal Portfolio Images"
+                            loading="lazy"
+                          />
+                        </a>
+                      </div>
+                      <div class="content">
+                        <div class="category-info">
+                          <div class="category-list">
+                            <a href="javascript:void(0)">Shopify</a>
+                          </div>
+                          <div class="meta">
+                            <span
+                              ><a href="javascript:void(0)"
+                                ><i class="feather-heart"></i
+                              ></a>
+                              <span id="project-like-2"></span
+                            ></span>
+                          </div>
+                        </div>
+                        <h4 class="title">
+                          <a href="javascript:void(0)"
+                            >Thosbaker.com eCommerce site in Shopify Plus<i
+                              class="feather-arrow-up-right"
+                            ></i
+                          ></a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Portfolio  -->
+
+                <!-- Start Single Portfolio  -->
+                <div class="rn-portfolio-slick">
+                  <div
+                    class="rn-portfolio"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
+                    data-bs-platform="Laravel"
+                    data-bs-image="assets/images/portfolio/reviews.webp"
+                    data-bs-title="Employee Review App"
+                    data-bs-link=""
+                    data-bs-description="This is a screenshot of the dashboard for the employee review application I built in 2022. It continues to grow and change depnding on the needs of HR. Unfortunately, I cannot link to it as it contains sensitive information. However, I hope to one day have a demo version available for guests."
+                    data-bs-like-id="3"
+                  >
+                    <div class="inner">
+                      <div class="thumbnail">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="assets/images/portfolio/reviews.webp"
+                            alt="Personal Portfolio Images"
+                            loading="lazy"
+                          />
+                        </a>
+                      </div>
+                      <div class="content">
+                        <div class="category-info">
+                          <div class="category-list">
+                            <a href="javascript:void(0)">Laravel</a>
+                          </div>
+                          <div class="meta">
+                            <span
+                              ><a href="javascript:void(0)"
+                                ><i class="feather-heart"></i
+                              ></a>
+                              <span id="project-like-3"></span
+                            ></span>
+                          </div>
+                        </div>
+                        <h4 class="title">
+                          <a href="javascript:void(0)"
+                            >Annual Employee Review App built using Laravel/PHP
+                            and MySQL<i class="feather-arrow-up-right"></i
+                          ></a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Portfolio  -->
+
+                <!-- Start Single Portfolio  -->
+                <div class="rn-portfolio-slick">
+                  <div
+                    class="rn-portfolio"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter"
+                    data-bs-platform="Wordpress"
+                    data-bs-image="assets/images/portfolio/lightfactory.webp"
+                    data-bs-title="The Light Factory"
+                    data-bs-link="https://thelightfactory.com"
+                    data-bs-description="I was contacted by The Light Factory to see if I could assist with redesigning their website and increase their SEO. The are on the Wordpress platform. To make it easy for them to make changes as needed, I enlisted the help of the Elemento plug-in. This allows them to keep their site fresh as often as they wish. I increased their SEO score from 31 to 97."
+                    data-bs-like-id="4"
+                  >
+                    <div class="inner">
+                      <div class="thumbnail">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="assets/images/portfolio/lightfactory.webp"
+                            alt="Personal Portfolio Images"
+                            loading="lazy"
+                          />
+                        </a>
+                      </div>
+                      <div class="content">
+                        <div class="category-info">
+                          <div class="category-list">
+                            <a href="javascript:void(0)">Wordpress</a>
+                          </div>
+                          <div class="meta">
+                            <span
+                              ><a href="javascript:void(0)"
+                                ><i class="feather-heart"></i
+                              ></a>
+                              <span id="project-like-4"></span
+                            ></span>
+                          </div>
+                        </div>
+                        <h4 class="title">
+                          <a href="javascript:void(0)"
+                            >Thelightfactory.com website built in WordPress<i
+                              class="feather-arrow-up-right"
+                            ></i
+                          ></a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Portfolio  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End portfolio Area -->
+      <!-- Modal Portfolio Body area Start -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="closeModal">
-                        <span aria-hidden="true"><i data-feather="x"></i></span>
-                    </button>
-                </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-                            <div class="col-lg-12">
-                                <div class="text-content">
-                                    <h3>Thank you for reaching out! I'll get back to you soon.</h3>
-                                </div>
-                            </div>
-                        </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true"><i data-feather="x"></i></span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="portfolio-popup-thumbnail">
+                    <div class="image">
+                      <img
+                        class="w-100"
+                        src="assets/images/portfolio/portfolio-04.jpg"
+                        alt="slide"
+                        loading="lazy"
+                      />
                     </div>
-            </div>
-        </div>
+                  </div>
+                </div>
 
-       </div>
+                <div class="col-lg-6">
+                  <div class="text-content">
+                    <h3>
+                      <span>Featured - Design</span> App Design Development.
+                    </h3>
+                    <p class="mb--30">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate distinctio assumenda explicabo veniam
+                      temporibus eligendi.
+                    </p>
 
-        <!-- Back to  top Start -->
-        <div class="backto-top">
-            <div>
-                <i data-feather="arrow-up"></i>
+                    <div class="button-group mt--20">
+                      <a
+                        href="javascript:void(0);"
+                        class="rn-btn thumbs-icon"
+                        id="project-like"
+                      >
+                        <span>LIKE THIS</span>
+                        <i data-feather="thumbs-up"></i>
+                      </a>
+                      <a
+                        href="javascript:void(0);"
+                        class="rn-btn"
+                        id="project-link"
+                        target="_blank"
+                      >
+                        <span>VIEW PROJECT</span>
+                        <i data-feather="chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End of .text-content -->
+                </div>
+              </div>
+              <!-- End of .row Body-->
             </div>
+          </div>
         </div>
-        <!-- Back to top end -->
+      </div>
+      <!-- End Modal Portfolio area -->
+      <!-- Start Contact section -->
+      <div
+        class="rn-contact-area rn-section-gap section-separator"
+        id="contacts"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title text-center">
+                <span class="subtitle">Contact</span>
+                <h2 class="title">Reach out to me</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
+            <div class="col-lg-5">
+              <div class="contact-about-area">
+                <div class="thumbnail">
+                  <img
+                    src="assets/images/about/coding-g766553f34_1920.webp"
+                    alt="contact-img"
+                  />
+                </div>
+                <div class="title-area">
+                  <h4 class="title">Shane Hamill</h4>
+                  <span>Senior Web Developer</span>
+                </div>
+                <div class="description">
+                  <p>I am available for freelance work.</p>
+                  <span class="mail"
+                    >Email:
+                    <a href="mailto:shane@hamilldesigns.com"
+                      >shane@hamilldesigns.com</a
+                    ></span
+                  >
+                </div>
+                <div class="social-area">
+                  <div class="name">FIND ME</div>
+                  <div class="social-icone">
+                    <a
+                      href="https://www.facebook.com/shane.hamill1/"
+                      target="_blank"
+                      ><i data-feather="facebook"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/shane-d-hamill/"
+                      target="_blank"
+                      ><i data-feather="linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-aos-delay="600" class="col-lg-7 contact-input">
+              <div class="contact-form-wrapper">
+                <div class="introduce">
+                  <form
+                    class="rnt-contact-form rwt-dynamic-form row"
+                    action="https://formspree.io/f/mwkaandv"
+                    method="POST"
+                    id="email-form"
+                  >
+                    <input
+                      type="hidden"
+                      name="subject"
+                      value="Website form email"
+                    />
+                    <input type="hidden" name="zip" id="botPot" />
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input
+                          class="form-control form-control-lg"
+                          name="name"
+                          id="contact-name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input
+                          class="form-control form-control-sm"
+                          id="contact-email"
+                          name="email"
+                          type="email"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="contact-message">Your Message</label>
+                        <textarea
+                          name="message"
+                          id="contact-message"
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <br />
+                    <div class="col-lg-12">
+                      <button
+                        name="submit"
+                        type="submit"
+                        id="submit"
+                        class="rn-btn"
+                      >
+                        <span>SEND MESSAGE</span>
+                        <i data-feather="arrow-right"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contuct section -->
+      <div
+        class="modal fade"
+        id="submitModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                id="closeModal"
+              >
+                <span aria-hidden="true"><i data-feather="x"></i></span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <div class="text-content">
+                    <h3>
+                      Thank you for reaching out! I'll get back to you soon.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to  top Start -->
+      <div class="backto-top">
+        <div>
+          <i data-feather="arrow-up"></i>
+        </div>
+      </div>
+      <!-- Back to top end -->
     </main>
-
 
     <!-- JS ============================================ -->
     <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/modernizer.min.js"></script>
-    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js" async></script>
+    <script src="assets/js/vendor/feather.min.js" async></script>
     <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.js"></script>
-    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/bootstrap.js" async></script>
+    <script src="assets/js/vendor/text-type.js" async></script>
     <script src="assets/js/vendor/wow.js"></script>
     <script src="assets/js/vendor/aos.js"></script>
-    <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/particles.js" async></script>
     <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
     <!-- main JS -->
-    <script src="assets/js/main.js"></script>
-</body>
-
+    <script src="assets/js/main.js" async></script>
+  </body>
 </html>
