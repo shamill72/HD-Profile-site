@@ -2909,8 +2909,9 @@ button.close {
     <script src="assets/js/main.js" async></script>
   <script>
     // Modified form submit handler
-$("#email-form").submit(function(event) {
+$("form").submit(function(event) {
     event.preventDefault();
+  console.log("Form: ",$("form"));
     // Don't submit directly, let reCAPTCHA handle it
 });
 
@@ -2920,13 +2921,15 @@ function onClick(e) {
     grecaptcha.ready(function() {
         grecaptcha.execute('6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6', {action: 'submit'}).then(function(token) {
             // Submit the form with the reCAPTCHA token
-            submitForm($("#email-form")[0], token);
+          console.log("onClick Form: ", $("form"));
+            submitForm($("form")[0], token);
         });
     });
 }
   </script>
   </body>
 </html>
+
 
 
 
