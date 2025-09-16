@@ -192,21 +192,6 @@ function submitForm(form, recaptchaToken = null) {
     }
 }
 
-// Modified form submit handler
-$("form").submit(function(event) {
-    event.preventDefault();
-    // Don't submit directly, let reCAPTCHA handle it
-});
 
-// Modified onClick function
-function onClick(e) {
-    e.preventDefault();
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6', {action: 'submit'}).then(function(token) {
-            // Submit the form with the reCAPTCHA token
-            submitForm($("form")[0], token);
-        });
-    });
-}
 
 
