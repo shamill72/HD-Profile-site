@@ -2907,8 +2907,26 @@ button.close {
     <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js" async></script>
+  <script>
+    // Modified form submit handler
+$("#email-form").submit(function(event) {
+    event.preventDefault();
+    // Don't submit directly, let reCAPTCHA handle it
+});
 
+// Modified onClick function
+function onClick(e) {
+    e.preventDefault();
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6', {action: 'submit'}).then(function(token) {
+            // Submit the form with the reCAPTCHA token
+            submitForm($("#email-form")[0], token);
+        });
+    });
+}
+  </script>
   </body>
 </html>
+
 
 
