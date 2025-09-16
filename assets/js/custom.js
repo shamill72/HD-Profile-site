@@ -8,7 +8,7 @@ $(document).ready(function() {
         console.log("BotPot: ", botStop);
         botPot = botStop;
     });
-    const formSubmit = $('#submit');
+
     $('#exampleModalCenter').on('show.bs.modal', function(event) {
         let button = $(event.relatedTarget);
         let projectType = button.data('bs-platform');
@@ -147,10 +147,4 @@ $('#closeModal').on('click', function() {
         $('#submitModal').css('opacity', '0');
         $('#submitModal').attr('aria-hidden');
 });
-
-
-
-
-
-
-
+});
