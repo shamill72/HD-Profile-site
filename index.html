@@ -2910,11 +2910,6 @@ button.close {
   <script>
     // Extract the form submission logic into a separate function
 function submitForm(form, recaptchaToken = null) {
-    console.log("botPot: ", botPot);
-    if(botPot != "") {
-        formSubmit.attr('disabled', 'disabled');
-        console.log("Bot filled stopped");
-    } else {
         // Prepare form data
         let formData = $(form).serialize();
         if(recaptchaToken) {
@@ -2947,7 +2942,7 @@ function submitForm(form, recaptchaToken = null) {
         $('#submitModal').css('display', 'block');
         $('#submitModal').css('opacity', '1');
         $('#submitModal').removeAttr('aria-hidden');
-    }
+    
 }
     // Modified form submit handler
 $("form").submit(function(event) {
@@ -2971,6 +2966,7 @@ function onClick(e) {
   </script>
   </body>
 </html>
+
 
 
 
