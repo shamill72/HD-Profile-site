@@ -2923,13 +2923,14 @@ function onClick(e) {
         grecaptcha.execute('6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6', {action: 'submit'}).then(function(token) {
             // Submit the form with the reCAPTCHA token
           console.log("onClick Form: ", $("form"));
-            submitForm($("form")[0], token);
+            submitForm($("form"), token);
         });
     });
 }
   </script>
   </body>
 </html>
+
 
 
 
