@@ -151,18 +151,23 @@ $('#closeModal').on('click', function() {
 
 // console.log("FormSubmit: ", formSubmit);
 
-$("form").submit(function(event) {
-    event.preventDefault();
-  console.log("botPot: ", botPot);
+// Extract the form submission logic into a separate function
+function submitForm(form, recaptchaToken = null) {
+    console.log("botPot: ", botPot);
     if(botPot != "") {
         formSubmit.attr('disabled', 'disabled');
         console.log("Bot filled stopped");
     } else {
-        // $(this).submit();
+        // Prepare form data
+        let formData = $(form).serialize();
+        if(recaptchaToken) {
+            formData += '&recaptcha_token=' + encodeURIComponent(recaptchaToken);
+        }
+        
         $.ajax({
-            type: $(this).attr('method'),  // Get the form method (POST/GET)
-            url: $(this).attr('action'),   // Get the form action URL
-            data: $(this).serialize(),     // Serialize the form data
+            type: $(form).attr('method'),
+            url: $(form).attr('action'),
+            data: formData,
             success: function(response) {
                 console.log("Form submitted successfully", response);
                 // Handle the success case
@@ -171,6 +176,7 @@ $("form").submit(function(event) {
                 console.error('Form submission error:', error);
             }
         });
+        
         console.log("Submitted the form");
         $('#email-form input').each(function() {
             if($(this).val() == "Website form email") {
@@ -184,8 +190,23 @@ $("form").submit(function(event) {
         $('#submitModal').css('opacity', '1');
         $('#submitModal').removeAttr('aria-hidden');
     }
+}
+
+// Modified form submit handler
+$("form").submit(function(event) {
+    event.preventDefault();
+    // Don't submit directly, let reCAPTCHA handle it
 });
 
-});
+// Modified onClick function
+function onClick(e) {
+    e.preventDefault();
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6', {action: 'submit'}).then(function(token) {
+            // Submit the form with the reCAPTCHA token
+            submitForm($("form")[0], token);
+        });
+    });
+}
 
 
