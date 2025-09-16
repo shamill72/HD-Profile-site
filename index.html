@@ -2911,6 +2911,7 @@ button.close {
     // Modified form submit handler
 $("form").submit(function(event) {
     event.preventDefault();
+  onClick(event);
   console.log("Form: ",$("form"));
     // Don't submit directly, let reCAPTCHA handle it
 });
@@ -2929,6 +2930,7 @@ function onClick(e) {
   </script>
   </body>
 </html>
+
 
 
 
