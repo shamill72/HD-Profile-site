@@ -1374,7 +1374,7 @@ button.close {
       async
     ></script>
     <script src="assets/js/custom.js" async></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ldm0csrAAAAADYOpNccKq00frpohxZDcrKnXOOk"></script>
   </head>
 
   <body
@@ -2956,7 +2956,7 @@ $("form").submit(function(event) {
 function onClick(e) {
     e.preventDefault();
     grecaptcha.ready(function() {
-        grecaptcha.execute('6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6', {action: 'submit'}).then(function(token) {
+        grecaptcha.execute('6Ldm0csrAAAAADYOpNccKq00frpohxZDcrKnXOOk', {action: 'submit'}).then(function(token) {
             // Submit the form with the reCAPTCHA token
           console.log("onClick Form: ", $("form"));
             submitForm($("form")[0], token);
@@ -2966,6 +2966,7 @@ function onClick(e) {
   </script>
   </body>
 </html>
+
 
 
 
