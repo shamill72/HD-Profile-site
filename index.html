@@ -1374,6 +1374,7 @@ button.close {
       async
     ></script>
     <script src="assets/js/custom.js" async></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6"></script>
   </head>
 
   <body
@@ -2906,5 +2907,16 @@ button.close {
     <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js" async></script>
+       <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LdfussrAAAAAMszYtLtke3aDW04tlZPdRluUO_6', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+  </script>
   </body>
 </html>
+
