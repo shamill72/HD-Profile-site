@@ -146,52 +146,10 @@ $('#closeModal').on('click', function() {
     $('#submitModal').css('display', 'none');
         $('#submitModal').css('opacity', '0');
         $('#submitModal').attr('aria-hidden');
-})
+});
 
 
-// console.log("FormSubmit: ", formSubmit);
 
-// Extract the form submission logic into a separate function
-function submitForm(form, recaptchaToken = null) {
-    console.log("botPot: ", botPot);
-    if(botPot != "") {
-        formSubmit.attr('disabled', 'disabled');
-        console.log("Bot filled stopped");
-    } else {
-        // Prepare form data
-        let formData = $(form).serialize();
-        if(recaptchaToken) {
-            formData += '&recaptcha_token=' + encodeURIComponent(recaptchaToken);
-        }
-        let url = $(form).attr('action');
-        console.log("Submit URL: ", url);
-        $.ajax({
-            type: $(form).attr('method'),
-            url: $(form).attr('action'),
-            data: formData,
-            success: function(response) {
-                console.log("Form submitted successfully", response);
-                // Handle the success case
-            },
-            error: function(xhr, status, error) {
-                console.error('Form submission error:', error);
-            }
-        });
-        
-        console.log("Submitted the form");
-        $('#email-form input').each(function() {
-            if($(this).val() == "Website form email") {
-                $(this).val("Website form email");
-            } else {
-                $(this).val("");
-            }
-        });
-        $('#contact-message').val("");
-        $('#submitModal').css('display', 'block');
-        $('#submitModal').css('opacity', '1');
-        $('#submitModal').removeAttr('aria-hidden');
-    }
-}
 
 
 
