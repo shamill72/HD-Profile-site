@@ -163,7 +163,8 @@ function submitForm(form, recaptchaToken = null) {
         if(recaptchaToken) {
             formData += '&recaptcha_token=' + encodeURIComponent(recaptchaToken);
         }
-        
+        let url = $(form).attr('action');
+        console.log("Submit URL: ", url);
         $.ajax({
             type: $(form).attr('method'),
             url: $(form).attr('action'),
