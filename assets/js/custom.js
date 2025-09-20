@@ -148,14 +148,62 @@ $('#closeModal').on('click', function() {
         $('#submitModal').attr('aria-hidden');
 });
 
-    $("form").submit(function(event) {
-    event.preventDefault();
-        grecaptcha.ready(function() {
-      grecaptcha.execute('6Ldm0csrAAAAADYOpNccKq00frpohxZDcrKnXOOk', {action: 'submit'}).then(function(token) {
-        // Send the token to your backend for verification
-        // Example: submitFormWithRecaptchaToken(token);
-        document.getElementById('g-recaptcha-response').value = token;
-      });
+document.getElementById('email-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    
+    const form = this;
+    const submitButton = form.querySelector('button[type="submit"]');
+    
+    // Disable submit button to prevent multiple submissions
+    submitButton.disabled = true;
+    submitButton.textContent = 'Validating...';
+    
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Ldm0csrAAAAADYOpNccKq00frpohxZDcrKnXOOk', {action: 'submit'}).then(function(token) {
+            // Send token to your validation server
+            fetch('https://hamilldesignstesting.com/recaptcha-validate.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    token: token
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // reCAPTCHA validation passed - submit the form
+                    console.log('reCAPTCHA validation successful, score:', data.score);
+                    
+                    // Add the token to the form as a hidden field (optional)
+                    const tokenInput = document.createElement('input');
+                    tokenInput.type = 'hidden';
+                    tokenInput.name = 'recaptcha_token';
+                    tokenInput.value = token;
+                    form.appendChild(tokenInput);
+                    
+                    // Submit the form
+                    form.submit();
+                } else {
+                    // reCAPTCHA validation failed
+                    alert('Security validation failed. Please try again.');
+                    console.error('reCAPTCHA validation failed:', data.error);
+                    
+                    // Re-enable submit button
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Submit';
+                }
+            })
+            .catch(error => {
+                console.error('Error validating reCAPTCHA:', error);
+                alert('An error occurred. Please try again.');
+                
+                // Re-enable submit button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit';
+            });
+        });
     });
-    });
+});
 });
