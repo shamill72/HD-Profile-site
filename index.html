@@ -1515,8 +1515,6 @@
                         <i data-feather="arrow-right"></i>
                       </button>
                     </div>
-                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-                    <input type="hidden" name="action" value="validate_captcha">
                   </form>
                 </div>
               </div>
@@ -1584,63 +1582,64 @@
     <script src="assets/js/main.js" async></script>
   <script>
     // Extract the form submission logic into a separate function
-function submitForm(form, recaptchaToken = null) {
-        // Prepare form data
-        let formData = $(form).serialize();
-        if(recaptchaToken) {
-            formData += '&recaptcha_token=' + encodeURIComponent(recaptchaToken);
-        }
-        let url = $(form).attr('action');
-        console.log("Submit URL: ", url);
-        $.ajax({
-            type: $(form).attr('method'),
-            url: $(form).attr('action'),
-            data: formData,
-            success: function(response) {
-                console.log("Form submitted successfully", response);
-                // Handle the success case
-            },
-            error: function(xhr, status, error) {
-                console.error('Form submission error:', error);
-            }
-        });
+// function submitForm(form, recaptchaToken = null) {
+//         // Prepare form data
+//         let formData = $(form).serialize();
+//         if(recaptchaToken) {
+//             formData += '&recaptcha_token=' + encodeURIComponent(recaptchaToken);
+//         }
+//         let url = $(form).attr('action');
+//         console.log("Submit URL: ", url);
+//         $.ajax({
+//             type: $(form).attr('method'),
+//             url: $(form).attr('action'),
+//             data: formData,
+//             success: function(response) {
+//                 console.log("Form submitted successfully", response);
+//                 // Handle the success case
+//             },
+//             error: function(xhr, status, error) {
+//                 console.error('Form submission error:', error);
+//             }
+//         });
         
-        console.log("Submitted the form");
-        $('#email-form input').each(function() {
-            if($(this).val() == "Website form email") {
-                $(this).val("Website form email");
-            } else {
-                $(this).val("");
-            }
-        });
-        $('#contact-message').val("");
-        $('#submitModal').css('display', 'block');
-        $('#submitModal').css('opacity', '1');
-        $('#submitModal').removeAttr('aria-hidden');
+//         console.log("Submitted the form");
+//         $('#email-form input').each(function() {
+//             if($(this).val() == "Website form email") {
+//                 $(this).val("Website form email");
+//             } else {
+//                 $(this).val("");
+//             }
+//         });
+//         $('#contact-message').val("");
+//         $('#submitModal').css('display', 'block');
+//         $('#submitModal').css('opacity', '1');
+//         $('#submitModal').removeAttr('aria-hidden');
     
-}
-    // Modified form submit handler
-$("form").submit(function(event) {
-    event.preventDefault();
-  onClick(event);
-  console.log("Form: ",$("form"));
-    // Don't submit directly, let reCAPTCHA handle it
-});
+// }
+//     // Modified form submit handler
+// $("form").submit(function(event) {
+//     event.preventDefault();
+//   onClick(event);
+//   console.log("Form: ",$("form"));
+//     // Don't submit directly, let reCAPTCHA handle it
+// });
 
-// Modified onClick function
-function onClick(e) {
-    e.preventDefault();
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6Ldm0csrAAAAADYOpNccKq00frpohxZDcrKnXOOk', {action: 'submit'}).then(function(token) {
-            // Submit the form with the reCAPTCHA token
-          console.log("onClick Form: ", $("form"));
-            submitForm($("form")[0], token);
-        });
-    });
-}
+// // Modified onClick function
+// function onClick(e) {
+//     e.preventDefault();
+//     grecaptcha.ready(function() {
+//         grecaptcha.execute('6Ldm0csrAAAAADYOpNccKq00frpohxZDcrKnXOOk', {action: 'submit'}).then(function(token) {
+//             // Submit the form with the reCAPTCHA token
+//           console.log("onClick Form: ", $("form"));
+//             submitForm($("form")[0], token);
+//         });
+//     });
+// }
   </script>
   </body>
 </html>
+
 
 
 
