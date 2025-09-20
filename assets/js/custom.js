@@ -147,4 +147,15 @@ $('#closeModal').on('click', function() {
         $('#submitModal').css('opacity', '0');
         $('#submitModal').attr('aria-hidden');
 });
+
+    $("form").submit(function(event) {
+    event.preventDefault();
+        grecaptcha.ready(function() {
+      grecaptcha.execute('6Ldm0csrAAAAADYOpNccKq00frpohxZDcrKnXOOk', {action: 'submit'}).then(function(token) {
+        // Send the token to your backend for verification
+        // Example: submitFormWithRecaptchaToken(token);
+        document.getElementById('g-recaptcha-response').value = token;
+      });
+    });
+    });
 });
