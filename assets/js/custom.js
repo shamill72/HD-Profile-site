@@ -163,6 +163,7 @@ document.getElementById('email-form').addEventListener('submit', function(e) {
             // Send token to your validation server
             fetch('https://hamilldesignstesting.com/recaptcha-validate.php', {
                 method: 'POST',
+                crossDomain: true,  
                 headers: {
                     'Content-Type': 'application/json',
                 },
